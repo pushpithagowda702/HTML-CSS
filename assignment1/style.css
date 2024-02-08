@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1030px;
+}
+
+.container-body {
+    padding: 0 24px;
+    border: 1px solid black;
+}
+
+.cb2 {
+    padding: 45px 20px 1px 22px;
+    border: 1px solid black;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.block {
+    background-color: #f9dbdb;
+    width: 100%;
+}
+
+.block-two {
+    background-color: #afadae;
+    width: 100%;
+}
+
+.row3 {
+    padding: 22px 32px 25px 30px;
+}
+
+.col1 {
+    width: 100%;
+    max-width: 210px;
+    margin: 0 7px 0 0;
+}
+
+.col2 {
+    width: 100%;
+    max-width: 700px;
+}
+
+.block1 {
+    height: 78px;
+    max-width: 320px;
+}
+
+.block2 {
+    height: 79px;
+    width: 168px;
+}
+
+.block3 {
+    height: 99px;
+    max-width: 320px;
+    margin: 48px auto 8px auto;
+}
+
+.block4 {
+    height: 26px;
+    width: 90px;
+    margin: 0 auto 21px auto;
+}
+
+.block5 {
+    height: 25px;
+    max-width: 198px;
+}
+
+.block6 {
+    height: 45px;
+    max-width: 343px;
+    margin: 8px 38px 22px 0;
+}
+
+.block7 {
+    height: 25px;
+    max-width: 318px;
+    margin: 18px 0 32px 0;
+}
+
+.block8 {
+    height: 106px;
+}
+
+.block9 {
+    height: 24px;
+    max-width: 290px;
+    margin: 8px 0 25px;
+}
+
+.block10 {
+    height: 69px;
+    max-width: 290px;
+    margin: 0 15px 0 0;
+}
+
+.block11 {
+    height: 40px;
+    max-width: 290px;
+    margin: 13px 20px 15px 0;
+}
+
+.row4 {
+    margin: 74px 0 0 0;
+}
+
+.block12 {
+    height: 47px;
+    max-width: 200px;
+    border: 1px solid;
+    margin: 0 18px -2px 0;
+}
+
+.c_block {
+    height: 24px;
+    width: 136px;
+}
+
+.block13 {
+    margin: 7px 0 5px 0;
+}
+
+.block14 {
+    height: 67px;
+    max-width: 291px;
+}
+
+.block15 {
+    margin-top: 32px;
+}
+
+.c_block1 {
+    height: 75px;
+    max-width: 805px;
+}
+
+.block16 {
+    margin: 8px 17px 8px 0;
+}
+
+.block17 {
+    height: 75px;
+    width: 162px;
+    margin: 8px 0;
+}
+
+.block18 {
+    height: 23px;
+    max-width: 385px;
+}
+
+.block19 {
+    height: 75px;
+    margin: 20px 0;
+}
+
+.block20 {
+    margin: 8px 0 24px 0;
+}
+
+.block21 {
+    margin: 8px 0 0 0;
+}
+
+.bfooter {
+    margin: 9px 0 11px;
+}
+
+.block22 {
+    height: 15px;
+    max-width: 194px;
+}
+
+.block23 {
+    height: 15px;
+    max-width: 442px;
+}
