@@ -13,6 +13,24 @@ body {
   opacity: 0.8;
 }
 
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.light {
+  opacity: 0.2;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .container {
   max-width: 970px;
   margin: 0 auto;
@@ -28,6 +46,56 @@ body {
   display: none;
 }
 
+a {
+  color: black;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.footer {
+  border: 0;
+  padding: 6px 0 20px 0;
+  opacity: 0.8;
+}
+
+#section1 {
+  display: block;
+}
+
+.load {
+  height: 80px;
+  max-width: 454px;
+  background: #c0c0c0;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px 0;
+}
+.load .load-message-details {
+  opacity: 0.8;
+}
+
+.container2#section3 .conversations-header, .container2#section2 .conversations-header {
+  margin: 30px 0 0 0;
+  font-size: 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.width {
+  width: 100%;
+}
+
+body {
+  font-family: Arial;
+  background: #f8fafa;
+  margin: 0;
+  opacity: 0.8;
+}
+
 .left {
   float: left;
 }
@@ -36,22 +104,29 @@ body {
   float: right;
 }
 
+.light {
+  opacity: 0.2;
+}
+
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
 
-.row1 {
-  margin: 0 0 55px 0;
+.container {
+  max-width: 970px;
+  margin: 0 auto;
 }
 
-.cb {
-  border-top: 10px solid black;
+.container-body {
+  border: 1px solid #eaeaea;
+  padding: 20px 20px 0 20px;
 }
 
-.row1left {
-  font-size: 20px;
+.container2 {
+  background: #f5f5f5;
+  display: none;
 }
 
 a {
@@ -62,88 +137,105 @@ a {
   font-weight: bold;
 }
 
+.footer {
+  border: 0;
+  padding: 6px 0 20px 0;
+  opacity: 0.8;
+}
+
 #section1 {
   display: block;
 }
 
-.row1text {
+.load {
+  height: 80px;
+  max-width: 454px;
+  background: #c0c0c0;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px 0;
+}
+.load .load-message-details {
+  opacity: 0.8;
+}
+
+.container2#section3 .conversations-header, .container2#section2 .conversations-header {
+  margin: 30px 0 0 0;
+  font-size: 30px;
+}
+
+.main {
+  border-top: 10px solid black;
+}
+.main .header {
+  margin: 0 0 55px 0;
+}
+.main .header .title-text {
   font-size: 25px;
 }
-
-.row1lefttext {
+.main .header .logout-text {
   font-size: 18px;
 }
-
-.row2 {
+.main .number {
   margin: 0 auto;
   max-width: fit-content;
 }
-
-.row2text {
+.main .number .number-text {
   font-size: 33px;
 }
-
-.row3 {
+.main .number .about-number {
   margin: 5px auto 18px auto;
   max-width: fit-content;
 }
-
-.row3text {
+.main .number .about-number .about-number-text {
   font-size: 12px;
 }
 
-.row4 {
+.label-text {
+  font-size: 20px;
+}
+
+.send-message-block {
   max-width: 850px;
   background: #e0e0e0;
   margin: 0 auto 70px;
   padding: 28px;
 }
-
-.col1 {
+.send-message-block .label {
   margin: 0 10px 0 0;
   max-width: 80px;
 }
-
-.col2 {
-  max-width: 700px;
-}
-
-.col1row1 {
+.send-message-block .label .label-to {
   margin: 5px 0 30px 0;
 }
 
-.col1row1text {
-  font-size: 20px;
+.new-message {
+  max-width: 700px;
 }
-
-.col2row1block1 {
+.new-message .phone-number {
   height: 38px;
   max-width: 308px;
   background: #fefefe;
   margin: 0 10px 10px 0;
 }
-
-.col2row1block2 {
+.new-message .phone-number .phone-number-text {
   margin: 10px 0 20px 0;
 }
-
-.col2row1text {
+.new-message .phone-number .phone-number-text .phone-number-text-style {
   font-size: 20px;
   font-style: italic;
   opacity: 0.5;
 }
-
-.col2row2 {
+.new-message .message-block {
   height: 108px;
   background-color: #fefefe;
 }
-
-.col2row3 {
+.new-message .attachment {
   margin: 8px 0 30px;
   opacity: 0.7;
 }
 
-.col2row4block1 {
+.send-button {
   height: 54px;
   max-width: 220px;
   border: 0;
@@ -153,12 +245,12 @@ a {
   font-size: 15px;
 }
 
-.col2row4block2 {
+.schedule-delivery {
   margin: 18px 0 0 0;
   opacity: 0.3;
 }
 
-.row5block {
+.tabs {
   border: 0;
   margin: 0 8px -5px 0;
   font-size: 15px;
@@ -170,104 +262,77 @@ a {
   text-decoration: none;
 }
 
-.row5block1 {
+.tab3, .tab2, .tab1 {
   height: 36px;
+  background: #f5f5f5;
+}
+
+.tab1 {
   max-width: 191px;
-  background: #f5f5f5;
 }
 
-.row5block2 {
-  height: 32px;
+.tab2 {
   max-width: 168px;
-  background: #f5f5f5;
 }
 
-.row5block3 {
-  height: 31px;
+.tab3 {
   max-width: 88px;
-  background: #f5f5f5;
 }
 
-.c2row1lefttext1 {
-  font-size: 30px;
+* {
+  box-sizing: border-box;
 }
 
-.c2row1lefttext2 {
-  font-size: 15px;
-  opacity: 0.6;
+.width {
+  width: 100%;
 }
 
-.c2row1righttext1 {
-  font-size: 25px;
+body {
+  font-family: Arial;
+  background: #f8fafa;
+  margin: 0;
+  opacity: 0.8;
 }
 
-.c2row2 {
-  margin: 23px 0 8px 0;
+.left {
+  float: left;
 }
 
-.row3left {
-  height: 50px;
-  max-width: 770px;
-  background: #fefefe;
-  margin: 0 8px 8px 0;
-}
-
-.row3right {
-  height: 52px;
-  max-width: 142px;
-  border: 0;
-  background: #c0c0c0;
-  font-size: 15px;
-}
-
-.c2row5 {
-  margin: 18px 0 0;
-  padding: 18px 0;
-  text-align: center;
-  background: #c0c0c0;
-}
-
-.c2row {
-  margin: 18px 0;
-  font-size: 18px;
+.right {
+  float: right;
 }
 
 .light {
   opacity: 0.2;
 }
 
-.c2row2 {
-  font-size: 18px;
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-.c2row4 {
-  font-size: 15px;
+.container {
+  max-width: 970px;
+  margin: 0 auto;
 }
 
-.c2row6 {
-  max-width: 730px;
+.container-body {
+  border: 1px solid #eaeaea;
+  padding: 20px 20px 0 20px;
 }
 
-.c2row7 {
-  max-width: 727px;
+.container2 {
+  background: #f5f5f5;
+  display: none;
 }
 
-.chat {
-  background: #e5e5e5;
-  padding: 18px 45px 18px 18px;
+a {
+  color: black;
 }
 
-.c2row8 {
-  height: 80px;
-  max-width: 454px;
-  background: #c0c0c0;
-  margin: 50px auto;
-  text-align: center;
-  padding: 20px 0;
-}
-
-.c2row8row2 {
-  opacity: 0.8;
+.bold {
+  font-weight: bold;
 }
 
 .footer {
@@ -276,33 +341,172 @@ a {
   opacity: 0.8;
 }
 
-.s2row1 {
+#section1 {
+  display: block;
+}
+
+.load {
+  height: 80px;
+  max-width: 454px;
+  background: #c0c0c0;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px 0;
+}
+.load .load-message-details {
+  opacity: 0.8;
+}
+
+.container2#section3 .conversations-header, .container2#section2 .conversations-header {
   margin: 30px 0 0 0;
   font-size: 30px;
 }
 
-.margin {
-  margin: 5px 0 0 0;
+.container2#section1 .new-text-message {
+  margin: 23px 0 8px 0;
+  font-size: 18px;
+}
+.container2#section1 .scheduled-message {
+  margin: 18px 0 0;
+  padding: 18px 0;
+  text-align: center;
+  background: #c0c0c0;
+}
+.container2#section1 .attach-photo-schedule-delivery {
+  font-size: 15px;
 }
 
-.s2row2 {
+.header .container2-header-left .phone-number {
+  font-size: 30px;
+}
+.header .container2-header-left .set-name {
+  font-size: 15px;
+  opacity: 0.6;
+}
+.header .container2-header-right .view-conversation {
+  font-size: 25px;
+}
+
+.enter-message {
+  height: 50px;
+  max-width: 770px;
+  background: #fefefe;
+  margin: 0 8px 8px 0;
+}
+
+.send-message {
+  height: 52px;
+  max-width: 142px;
+  border: 0;
+  background: #c0c0c0;
+  font-size: 15px;
+}
+
+.sender {
+  margin: 18px 0;
+  font-size: 18px;
+}
+
+.chat-message {
+  max-width: 730px;
+  background: #e5e5e5;
+  padding: 18px 45px 18px 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.width {
+  width: 100%;
+}
+
+body {
+  font-family: Arial;
+  background: #f8fafa;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.light {
+  opacity: 0.2;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+.container-body {
+  border: 1px solid #eaeaea;
+  padding: 20px 20px 0 20px;
+}
+
+.container2 {
+  background: #f5f5f5;
+  display: none;
+}
+
+a {
+  color: black;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.footer {
+  border: 0;
+  padding: 6px 0 20px 0;
+  opacity: 0.8;
+}
+
+#section1 {
+  display: block;
+}
+
+.load {
+  height: 80px;
+  max-width: 454px;
+  background: #c0c0c0;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px 0;
+}
+.load .load-message-details {
+  opacity: 0.8;
+}
+
+.container2#section3 .conversations-header, .container2#section2 .conversations-header {
+  margin: 30px 0 0 0;
+  font-size: 30px;
+}
+
+.container2#section2 .conversations {
   margin: 30px 0;
 }
-
-.s2row2col1 {
+.container2#section2 .conversations .sender-col {
   max-width: 155px;
   margin: 0 20px 0 0;
 }
-
-.s2row2col2 {
+.container2#section2 .conversations .messages-col {
   max-width: 750px;
 }
-
-.s2row {
-  margin: 30px 0;
-}
-
-.ribbon {
+.container2#section2 .conversations .messages-col .ribbon {
   height: 12px;
   max-width: 25px;
   font-size: 11px;
@@ -311,32 +515,114 @@ a {
   padding: 3px 3px 2px;
 }
 
-.imgblock {
+.margin-top {
+  margin: 30px 0 0 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.width {
+  width: 100%;
+}
+
+body {
+  font-family: Arial;
+  background: #f8fafa;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.light {
+  opacity: 0.2;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+.container-body {
+  border: 1px solid #eaeaea;
+  padding: 20px 20px 0 20px;
+}
+
+.container2 {
+  background: #f5f5f5;
+  display: none;
+}
+
+a {
+  color: black;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.footer {
+  border: 0;
+  padding: 6px 0 20px 0;
+  opacity: 0.8;
+}
+
+#section1 {
+  display: block;
+}
+
+.load {
+  height: 80px;
+  max-width: 454px;
+  background: #c0c0c0;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px 0;
+}
+.load .load-message-details {
+  opacity: 0.8;
+}
+
+.container2#section3 .conversations-header, .container2#section2 .conversations-header {
+  margin: 30px 0 0 0;
+  font-size: 30px;
+}
+
+.container2#section3 .images-row {
+  margin: 30px 0 0 0;
+}
+.container2#section3 .images-row .imgblock {
   max-width: 200px;
   height: 200px;
   padding: 8px;
   border: 1px solid #eaeaea;
 }
-
-.imgMargin {
+.container2#section3 .images-row .imgblock.imgMargin {
   margin: 0 41px 0 0;
 }
-
-.s3row1 {
-  margin: 30px 0 0 0;
-}
-
-.image {
+.container2#section3 .images-row .imgblock .image {
   max-width: 178px;
   height: 142px;
 }
-
-.caption {
+.container2#section3 .images-row .imgblock .caption {
   font-size: 16px;
   margin: 3px 0;
 }
-
-.imgcaption {
+.container2#section3 .images-row .imgblock .imgcaption {
   font-size: 14px;
 }
 

@@ -6,7 +6,7 @@ function tabs(evt, section) {
         secContent[i].style.display = "none";
     }
 
-    secLinks = document.getElementsByClassName("row5block");
+    secLinks = document.getElementsByClassName("tabs");
     for(i=0; i<secLinks.length; i++) {
         secLinks[i].className = secLinks[i].className.replace(" active", "");
     }

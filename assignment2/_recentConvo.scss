@@ -1,0 +1,71 @@
+@import 'base';
+
+.container2 {
+    &#section1 {
+        .new-text-message {
+            margin: 23px 0 8px 0;
+            font-size: 18px;
+        }
+    
+        .scheduled-message {
+            margin: 18px 0 0;
+            padding: 18px 0;
+            text-align: center;
+            background: $button-color;
+        }
+    
+        .attach-photo-schedule-delivery {
+            font-size: 15px;
+        }
+
+    }
+}
+
+.header {
+    .container2-header-left {
+        .phone-number {
+            font-size: 30px;
+        }
+        
+        .set-name {
+            font-size: 15px;
+            opacity: 0.6;
+        }
+    }
+    
+    .container2-header-right {
+        .view-conversation {
+            font-size: 25px;
+        }
+    }
+}
+
+.enter-message {
+    height: 50px;
+    max-width: 770px;
+    background: $container-primary-color;
+    margin: 0 8px 8px 0;
+}
+
+.send-message {
+    height: 52px;
+    max-width: 142px;
+    border: 0;
+    background: $button-color;
+    font-size: 15px;
+}
+
+.sender {
+    margin: 18px 0;
+    font-size: 18px;
+}
+    
+.chat-message {
+    max-width: 730px;
+    background: #e5e5e5;
+    padding: 18px 45px 18px 18px;
+}
+
+.load {
+    @extend %load
+}
