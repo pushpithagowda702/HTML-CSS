@@ -1,40 +1,38 @@
-@import 'base';
-
 .container2 {
     &#section3 {
         .conversations-header {
             @extend %conversations-header;
         }
 
-        .images-row {
-            margin: 30px 0 0 0;
+        .image-row {
+            margin: 10px 0 0 0;
+            
+        .imgblock {
+            margin: 30px 15px 0 15px;
+            max-width: 200px;
+            height: 207px;
+            padding: 8px;
+            border: $border;
 
-            .imgblock {
-                &.imgMargin {
-                    margin: 0 41px 0 0;
-                }
+            .image {
+                max-width: 178px;
+                height: 142px;
+                filter: opacity(0.2);
+            }
 
-                max-width: 200px;
-                height: 200px;
-                padding: 8px;
-                border: $border;
+            .caption {
+                font-size: 16px;
+                margin: 3px 0;
+            }
 
-                .image {
-                    max-width: 178px;
-                    height: 142px;
-                }
-
-                .caption {
-                    font-size: 16px;
-                    margin: 3px 0;
-                }
-
-                .imgcaption {
-                    font-size: 14px;
-                }
+            .imgcaption {
+                font-size: 14px;
             }
         }
+        }
+
     }
+
 }
 
 .load {

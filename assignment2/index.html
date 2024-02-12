@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+</head>
+
+<body>
+    <div class="container container-body main width">
+        <header class="header clearfix">
+            <h1 class="left">Textify <span class="normal">Because Text Messaging Rocks</span></h1>
+            <a href="" class="logout bold right">Logout</a>
+        </header>
+        <h1 class="number number-text bold">(212) 555-1234</h1>
+        <a href="" class="number about-number">What's this number?</a>
+        <div class="send-message-block width clearfix">
+            <label class="label left bold">To:</label>
+            <select class="phone-number width"></select>
+            <span class="phone-number-text">&lt;&lt; Phone number or name</span>
+            <div>
+                <label class="label bold left">Message:</label>
+                <div class="message-info width left">
+                    <textarea class="message-block width"></textarea>
+                    <a href="" class="attachment">Attach a photo to this text message</a>
+                    <p></p>
+                    <button class="send-button width bold">Send Text Message</button>
+                    <span class="schedule-delivery">Or, <a href="">schedule it for later delivery</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix">
+            <button class="tabs tab1 width bold active" onclick="tabs(event, 'section1')">Recent
+                Conversation</button>
+            <button class="tabs tab2 width bold" onclick="tabs(event, 'section2')">All
+                Conversation</button>
+            <button class="tabs tab3 width bold" onclick="tabs(event, 'section3')">Photos</button>
+            <a href="" class="change-password right bold">Change Password</a>
+        </div>
+    </div>
+    <div class="container container-body container2 width" id="section1">
+        <header class="header clearfix">
+            <h1 class="container2-header-left">(508) 555-1234 <a href="" class="set-name">Set a name for this
+                    number</a>
+                <a href="" class="view-conversation bold right">View All Conversations <span class="arrow right">
+                        >></span></a>
+            </h1>
+        </header>
+        <div class="new-text-message bold">New Text Message:</div>
+        <textarea class="enter-message width"></textarea>
+        <button class="send-message width bold"><a href="">Send Message</a></button>
+        <a href="" class="attach-photo-schedule-delivery">Attach a photo</a> or <a href="">schedule for later
+            delivery</a>
+        <div class="scheduled-message width">You have <span class="bold">1 message scheduled</span> for later
+            delivery. <a href="">Click here to view them</a></div>
+        <div class="sender bold">(508) 555-1234 <span class="light normal">Today</span></div>
+        <div class="chat-message width">OMG - I can't wait to see that movie! What theater do you want to got to? Anything down near Union Sq is really best for me.</div>
+        <div class="clearfix">
+            <div class="sender right bold">You - (212) 555-1234 <span class="light normal">Today</span></div>
+            <div class="chat-message right width">I'm not really sure what's out. I saw a trailer for the Adjustment Bureau the other day on TV, I thought it looked pretty cool. Plus, you *love* Matt!</div>
+        </div>
+        <div class="sender bold">(508) 555-1234 <span class="light normal">Yesterday</span></div>
+        <div class="chat-message width">A movie sounds perfect. What did you have in mind?</div>
+        <div class="clearfix">
+            <div class="sender right bold">You - (212) 555-1234 <span class="light normal">Yesterday</span></div>
+            <div class="chat-message right width">Hey sugar, what are you up to this weekend? Haven't seen you in a while - was hopeing we might hang out this weekend... maybe see a movie :)</div>
+        </div>
+        <div class="sender bold">(508) 555-1234 <span class="light normal">About 3 Weeks Ago</span></div>
+        <div class="chat-message width">I know, right?!?!</div>
+        <div class="clearfix">
+            <div class="sender right bold">You - (212) 555-1234 <span class="light normal">About 3 Weeks Ago</span></div>
+            <div class="chat-message right width">I still can't believe what he said! And right in front of everyone??? You could probably hear my jaw hit the floor - I was all like, WTF!!!</div>
+        </div>
+        <div class="load">
+            <a href="" class="load-more bold">Load More Messages</a>
+            <div class="load-more-details">There are 217 more messages in this conversation</div>
+        </div>
+    </div>
+    <div class="container container-body container2 width" id="section2">
+        <h1 class="conversations-header">Top Conversations</h1>
+        <hr>
+        <div class="conversations">
+            <div class="clearfix">
+                <div class="sender-col left width">
+                    <a href="" class="sender-number right bold">(508) 555-1234</a>
+                    <div class="light right">233 Messages</div>
+                </div>
+
+                <div class="messages-col left width">
+                    <span class="ribbon bold">NEW</span> OMG - I can't wait to see that movie!
+                    What
+                    theater do you want to go? Anything down near
+                    Union Sq is really best for me.
+                </div>
+            </div>
+            <div class="margin-top clearfix">
+                <div class=" sender-col left width">
+                    <a href="" class="sender-number right bold">Sarah Kelly</a>
+                    <div class="light right">233 Messages</div>
+                </div>
+
+                <div class="messages-col left width">
+                    Thanks for your condolences. The family is taking it pretty hard. But,
+                    she was 92 -
+                    she
+                    lived a really great life. This weekend, we're gonna be going through all her old photos.
+                    xoxo.
+                </div>
+            </div>
+            <div class="margin-top clearfix">
+                <div class=" sender-col left width">
+                    <a href="" class="sender-number right bold">Sarah Kelly</a>
+                    <div class="light right">233 Messages</div>
+                </div>
+
+                <div class="messages-col left width">
+                    Thanks for your condolences. The family is taking it pretty hard. But,
+                    she was 92 -
+                    she
+                    lived a really great life. This weekend, we're gonna be going through all her old photos.
+                    xoxo.
+                </div>
+            </div>
+        </div>
+        <h1 class="conversations-header">All Conversations</h1>
+        <hr>
+        <div class="conversations">
+            <div class="clearfix">
+                <div class="sender-col left width">
+                    <a href="" class="sender-number right bold">(508) 555-1234</a>
+                    <div class="light right">233 Messages</div>
+                </div>
+
+                <div class="messages-col left width">
+                    Ha ha ha ha - that is hilarious!
+                </div>
+            </div>
+            <div class="margin-top clearfix">
+                <div class=" sender-col left width">
+                    <a href="" class="sender-number right bold">(212) 555-0933</a>
+                    <div class="light right">233 Messages</div>
+                </div>
+
+                <div class="messages-col left width">
+                    <span class="ribbon width bold">NEW</span> OMG - I can't wait to see that movie!
+                    What
+                    theater do you want to go? Anything down near
+                    Union Sq is really best for me.
+                </div>
+            </div>
+            <div class="margin-top clearfix">
+                <div class="sender-col left width">
+                    <a href="" class="sender-number right bold">(212) 555-0933</a>
+                    <div class="light right">233 Messages</div>
+                </div>
+
+                <div class="messages-col left width">
+                    <span class="ribbon width bold">NEW</span> OMG - I can't wait to see that movie!
+                    What
+                    theater do you want to go? Anything down near
+                    Union Sq is really best for me.
+                </div>
+            </div>
+            <div class="margin-top clearfix">
+                <div class="sender-col left width">
+                    <a href="" class="sender-number right bold">(508) 555-1234</a>
+                    <div class="light right">233 Messages</div>
+                </div>
+
+                <div class="messages-col left width">
+                    Ha ha ha ha - that is hilarious!
+                </div>
+            </div>
+            <div class="margin-top clearfix">
+                <div class="sender-col left width">
+                    <a href="" class="sender-number right bold">(212) 555-0933</a>
+                    <div class="light right">233 Messages</div>
+                </div>
+
+                <div class="messages-col left width">
+                    <span class="ribbon width bold">NEW</span> OMG - I can't wait to see that movie!
+                    What
+                    theater do you want to go? Anything down near
+                    Union Sq is really best for me.
+                </div>
+            </div>
+            <div class="margin-top clearfix">
+                <div class="sender-col left width">
+                    <a href="" class="sender-number right bold">(508) 555-1234</a>
+                    <div class="light right">233 Messages</div>
+                </div>
+
+                <div class="messages-col left width">
+                    Ha ha ha ha - that is hilarious!
+                </div>
+            </div>
+            <div class="margin-top clearfix">
+                <div class=" sender-col left width">
+                    <a href="" class="sender-number right bold">(212) 555-0933</a>
+                    <div class="light right">233 Messages</div>
+                </div>
+
+                <div class="messages-col left width">
+                    OMG - I can't wait to see that movie!
+                    What
+                    theater do you want to go? Anything down near
+                    Union Sq is really best for me.
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container container-body container2 width" id="section3">
+        <h1 class="conversations-header">Photos From All Conversations</h1>
+        <hr>
+        <div class="image-row clearfix">
+            <div class="imgblock width left imgMargin">
+                <img class="image width" src="image.jpg">
+                <div class="caption bold">(508) 555-1234</div>
+                <div class="imgcaption light">Sent on 03/01/2011</div>
+            </div>
+            <div class="imgblock width left imgMargin">
+                <img class="image width" src="image.jpg">
+                <div class="caption bold">(508) 555-1234</div>
+                <div class="imgcaption light">Sent on 03/01/2011</div>
+            </div>
+            <div class="imgblock width left imgMargin">
+                <img class="image width" src="image.jpg">
+                <div class="caption bold">(508) 555-1234</div>
+                <div class="imgcaption light">Sent on 03/01/2011</div>
+            </div>
+            <div class="imgblock width left imgMargin">
+                <img class="image width" src="image.jpg">
+                <div class="caption bold">(508) 555-1234</div>
+                <div class="imgcaption light">Sent on 03/01/2011</div>
+            </div>
+            <div class="imgblock width left imgMargin">
+                <img class="image width" src="image.jpg">
+                <div class="caption bold">(508) 555-1234</div>
+                <div class="imgcaption light">Sent on 03/01/2011</div>
+            </div>
+            <div class="imgblock width left imgMargin">
+                <img class="image width" src="image.jpg">
+                <div class="caption bold">(508) 555-1234</div>
+                <div class="imgcaption light">Sent on 03/01/2011</div>
+            </div>
+            <div class="imgblock width left imgMargin">
+                <img class="image width" src="image.jpg">
+                <div class="caption bold">(508) 555-1234</div>
+                <div class="imgcaption light">Sent on 03/01/2011</div>
+            </div>
+            <div class="imgblock width left imgMargin">
+                <img class="image width" src="image.jpg">
+                <div class="caption bold">(508) 555-1234</div>
+                <div class="imgcaption light">Sent on 03/01/2011</div>
+            </div>
+            <div class="imgblock width left imgMargin">
+                <img class="image width" src="image.jpg">
+                <div class="caption bold">(508) 555-1234</div>
+                <div class="imgcaption light">Sent on 03/01/2011</div>
+            </div>
+            <div class="imgblock width left imgMargin">
+                <img class="image width" src="image.jpg">
+                <div class="caption bold">(508) 555-1234</div>
+                <div class="imgcaption light">Sent on 03/01/2011</div>
+            </div>
+            <div class="imgblock width left imgMargin">
+                <img class="image width" src="image.jpg">
+                <div class="caption bold">(508) 555-1234</div>
+                <div class="imgcaption light">Sent on 03/01/2011</div>
+            </div>
+            <div class="imgblock width left imgMargin">
+                <img class="image width" src="image.jpg">
+                <div class="caption bold">(508) 555-1234</div>
+                <div class="imgcaption light">Sent on 03/01/2011</div>
+            </div>
+        </div>
+        <div class="load">
+            <div class="load-more bold"><a href="">Load More Photos</a></div>
+            <div class="load-more-details">There are 93 more photos across 7 conversation</div>
+        </div>
+    </div>
+    <div class="container clearfix footer">
+        <div class="left">Textify &#169; 2011</div>
+        <div class="right">All text messaging data on this site is kept 100% secure - <a href="" class="footer">read our
+                security
+                policy</a></div>
+    </div>
+</body>
+</html>

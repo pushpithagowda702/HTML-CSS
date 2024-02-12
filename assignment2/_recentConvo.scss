@@ -1,65 +1,65 @@
-@import 'base';
-
 .container2 {
     &#section1 {
         .new-text-message {
-            margin: 23px 0 8px 0;
-            font-size: 18px;
+            margin: 0px 0 8px 0;
+            font-size: 16px;
         }
-    
+
         .scheduled-message {
             margin: 18px 0 0;
             padding: 18px 0;
             text-align: center;
             background: $button-color;
         }
-    
+
         .attach-photo-schedule-delivery {
-            font-size: 15px;
+            font-size: 14px;
         }
 
-    }
-}
-
-.header {
-    .container2-header-left {
-        .phone-number {
-            font-size: 30px;
+        .enter-message {
+            height: 52px;
+            max-width: 770px;
+            background: $container-primary-color;
+            margin: 0 8px 3px 0;
         }
         
-        .set-name {
+        .send-message {
+            height: 52px;
+            max-width: 145px;
+            border: 0;
+            background: $button-color;
             font-size: 15px;
-            opacity: 0.6;
-        }
-    }
-    
-    .container2-header-right {
-        .view-conversation {
-            font-size: 25px;
+            vertical-align: top;
         }
     }
 }
 
-.enter-message {
-    height: 50px;
-    max-width: 770px;
-    background: $container-primary-color;
-    margin: 0 8px 8px 0;
-}
+.container2-header-left {
+    .phone-number {
+        font-size: 30px;
+    }
 
-.send-message {
-    height: 52px;
-    max-width: 142px;
-    border: 0;
-    background: $button-color;
-    font-size: 15px;
+    .set-name {
+        font-size: 14px;
+        vertical-align: middle;
+        color: $font-light;
+    }
+
+    .view-conversation {
+        font-size: 25px;
+    }
+
+    .arrow {
+        font-size: 15px;
+        margin: 10px 0 0 9px;
+    }
 }
 
 .sender {
-    margin: 18px 0;
-    font-size: 18px;
+    margin: 15px 0;
+    font-size: 16px;
 }
-    
+
 .chat-message {
     max-width: 730px;
     background: #e5e5e5;
@@ -67,5 +67,5 @@
 }
 
 .load {
-    @extend %load
+    @extend %load;
 }

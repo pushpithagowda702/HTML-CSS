@@ -1,42 +1,25 @@
-@import 'base';
-
 .main {
     border-top: 10px solid black;
 
-    .header {
-        margin: 0 0 55px 0;
-
-        .title-text {
-            font-size: 25px;
-        }
-
-        .logout-text {
-            font-size: 18px;
-        }
+    .logout {
+        font-size: 18px;
+        margin: 4px 0 0 0;
     }
-
-    .number {
-        margin: 0 auto;
-        max-width: fit-content;
-
-        .number-text {
-            font-size: 33px;
-        }
-
-        .about-number {
-            margin: 5px auto 18px auto;
-            max-width: fit-content;
-
-            .about-number-text {
-                font-size: 12px;
-            }
-        }
-    }
-
 }
 
-.label-text {
-    font-size: $font-size + 4px;
+.number {
+    margin: 0 auto;
+    max-width: fit-content;
+
+    &.number-text {
+        font-size: 33px;
+    }
+
+    &.about-number {
+        display: block;
+        margin: 5px auto 18px auto;
+        font-size: 12px;
+    }
 }
 
 .send-message-block {
@@ -47,88 +30,96 @@
 
     .label {
         margin: 0 10px 0 0;
-        max-width: 80px;
-
-        .label-to {
-            margin: 5px 0 30px 0;
-        }
+        width: 120px;
+        font-size: 25px;
+        text-align: right
     }
-}
-
-.new-message {
-    max-width: 700px;
 
     .phone-number {
         height: 38px;
         max-width: 308px;
         background: $container-primary-color;
         margin: 0 10px 10px 0;
-
-        .phone-number-text {
-            margin: 10px 0 20px 0;
-
-            .phone-number-text-style {
-                font-size: 20px;
-                font-style: italic;
-                opacity: 0.5;
-            }
-        }
     }
+    
+    .phone-number-text {
+        margin: 10px 0;
+        font-size: 25px;
+        font-style: italic;
+        color: $font-light;
+    }
+}
+
+.message-info {
+    max-width: 650px;
 
     .message-block {
         height: 108px;
         background-color: $container-primary-color;
+        max-width: 650px;
+        margin: 0 0 5px 0;
     }
-
+    
     .attachment {
-        margin: 8px 0 30px;
-        opacity: 0.7;
+        font-size: 15px;
     }
-}
+     p {
+        margin: 30px 0 0 0;
+     }
+    
+    .send-button {
+        height: 54px;
+        max-width: 220px;
+        border: 0;
+        margin: 0 19px 0 0;
+        background: $button-color;
+        padding: 18px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    
+    .schedule-delivery {
+        margin: 18px 0 0 0;
+        color: #b1b1b1;
 
-.send-button {
-    height: 54px;
-    max-width: 220px;
-    border: 0;
-    margin: 0 19px 0 0;
-    background: $button-color;
-    padding: 18px;
-    font-size: 15px;
-}
-
-.schedule-delivery {
-    margin: 18px 0 0 0;
-    opacity: 0.3;
+        a {
+            color: #b1b1b1;  
+        }
+    }
 }
 
 .tabs {
-    border: 0;
-    margin: 0 8px -5px 0;
-    font-size: 15px;
+    margin: 0 8px 0 0;
+    font-size: 13px;
     text-decoration: underline;
-}
 
-.active {
-    border-bottom: 0px;
-    text-decoration: none;
+    &.active {
+        text-decoration: none;
+    }
+
+    &.tab1 {
+        @extend %tab-background;
+        max-width: 191px;
+    }
+    
+    &.tab2 {
+        @extend %tab-background;
+        max-width: 168px;
+    }
+    
+    &.tab3 {
+        @extend %tab-background;
+        max-width: 88px;
+    }
 }
 
 %tab-background {
     height: 36px;
+    border: $border;
     background: $container2-color;
 }
 
-.tab1 {
-    @extend %tab-background;
-    max-width: 191px;
-}
-
-.tab2 {
-    @extend %tab-background;
-    max-width: 168px;
-}
-
-.tab3 {
-    @extend %tab-background;
-    max-width: 88px;
+.change-password {
+    margin: 10px 0 0 0;
+    font-size: 13px;
 }
