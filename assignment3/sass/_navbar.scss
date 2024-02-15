@@ -1,0 +1,20 @@
+header {
+    &.header-padding {
+        padding: 22px 0;
+    }
+
+    .have-account {
+        margin: 0 -10px 0 30px;
+    }
+
+    .navbar-brand {
+        margin: 0 60px 0 0px;
+    }
+
+    .create-account {
+        padding: 10px 50px;
+        border: 3px solid rgba(var(--bs-secondary-rgb));
+        border-radius: 4px;
+        color: #7b43f9;
+    }
+}

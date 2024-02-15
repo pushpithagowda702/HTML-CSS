@@ -1,0 +1,40 @@
+.image-background {
+    background: url("images/background.jpg") no-repeat;
+    background-size: cover;
+    padding: 200px 0 100px 0;
+
+    .h1 {
+        max-width: 650px;
+        margin: 0px auto 20px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .search-practice-col {
+        max-width: 300px;
+        border: 0;
+    }
+
+    .toggle-bar {
+        max-width: 900px;
+        margin: 80px auto;
+
+        .toggle {
+            padding: 18px;
+        }
+
+        .dropdown-toggle {
+            text-decoration: none;
+        }
+    }
+
+    button {
+        @extend %button-border;
+    }
+
+    .play {
+        width: 40px;
+    }
+}

@@ -1,0 +1,35 @@
+.ready-started {
+    background: url("images/doctor.jpg");
+}
+
+.ready-get-started {
+    padding: 150px 0;
+    @extend %transparent-background;
+
+    .ready-content {
+        max-width: 370px;
+        margin: 0 auto;
+    }
+
+    p {
+        font-size: 18px;
+        margin: 20px 0 0;
+    }
+
+    .social-media-buttons {
+        .facebook {
+            background-color: #3f51b5;
+            margin: 0 0 15px 0;
+        }
+
+        .google {
+            background-color: #f44336;
+        }
+
+        button {
+            max-width: 375px;
+            padding: 16px 0;
+            @extend %button-border;
+        }
+    }
+}

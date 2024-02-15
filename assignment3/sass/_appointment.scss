@@ -1,0 +1,35 @@
+.bg-container {
+    background-color: $background;
+    padding: 90px 0;
+
+    p {
+        font-size: 20px;
+        margin: 10px 0 0;
+    }
+
+    .cards {
+        margin: 0 auto 60px;
+        max-width: 1200px;
+    }
+
+    .custom-card {
+        @extend %button-border;
+        width: 260px;
+        height: 190px;
+        margin: 150px 15px 15px;
+    }
+
+    .card-logo {
+        width: 130px;
+        height: 130px;
+        border: 10px solid $background;
+        padding: 35px;
+        margin: 0 auto;
+        top: -70px;
+    }
+
+    .card-content {
+        position: relative;
+        top: -50px
+    }
+}

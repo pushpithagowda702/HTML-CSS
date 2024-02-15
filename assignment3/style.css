@@ -1,0 +1,301 @@
+.review-enquiry .review, .trial .trial-row, .ready-get-started {
+  background-color: rgba(75, 92, 187, 0.92);
+}
+
+.review-enquiry .enquiry button, .trial .trial-row button, .best-practices-ratings .card, .ready-get-started .social-media-buttons button, .bg-container .custom-card, .image-background button {
+  border: 0;
+  border-radius: 0;
+}
+
+.scroll-content button, .best-practices-ratings .ratings-footer button {
+  border: 1px;
+  float: right;
+  padding: 5px 15px;
+}
+.scroll-content .arrow, .best-practices-ratings .ratings-footer .arrow {
+  border-right: 1px solid #e0e0e0;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.full-width {
+  width: 100%;
+}
+
+header.header-padding {
+  padding: 22px 0;
+}
+header .have-account {
+  margin: 0 -10px 0 30px;
+}
+header .navbar-brand {
+  margin: 0 60px 0 0px;
+}
+header .create-account {
+  padding: 10px 50px;
+  border: 3px solid rgba(var(--bs-secondary-rgb));
+  border-radius: 4px;
+  color: #7b43f9;
+}
+
+.image-background {
+  background: url("images/background.jpg") no-repeat;
+  background-size: cover;
+  padding: 200px 0 100px 0;
+}
+.image-background .h1 {
+  max-width: 650px;
+  margin: 0px auto 20px;
+}
+.image-background p {
+  font-size: 20px;
+}
+.image-background .search-practice-col {
+  max-width: 300px;
+  border: 0;
+}
+.image-background .toggle-bar {
+  max-width: 900px;
+  margin: 80px auto;
+}
+.image-background .toggle-bar .toggle {
+  padding: 18px;
+}
+.image-background .toggle-bar .dropdown-toggle {
+  text-decoration: none;
+}
+.image-background .play {
+  width: 40px;
+}
+
+.bg-container {
+  background-color: #f9f8fd;
+  padding: 90px 0;
+}
+.bg-container p {
+  font-size: 20px;
+  margin: 10px 0 0;
+}
+.bg-container .cards {
+  margin: 0 auto 60px;
+  max-width: 1200px;
+}
+.bg-container .custom-card {
+  width: 260px;
+  height: 190px;
+  margin: 150px 15px 15px;
+}
+.bg-container .card-logo {
+  width: 130px;
+  height: 130px;
+  border: 10px solid #f9f8fd;
+  padding: 35px;
+  margin: 0 auto;
+  top: -70px;
+}
+.bg-container .card-content {
+  position: relative;
+  top: -50px;
+}
+
+.ready-started {
+  background: url("images/doctor.jpg");
+}
+
+.ready-get-started {
+  padding: 150px 0;
+}
+.ready-get-started .ready-content {
+  max-width: 370px;
+  margin: 0 auto;
+}
+.ready-get-started p {
+  font-size: 18px;
+  margin: 20px 0 0;
+}
+.ready-get-started .social-media-buttons .facebook {
+  background-color: #3f51b5;
+  margin: 0 0 15px 0;
+}
+.ready-get-started .social-media-buttons .google {
+  background-color: #f44336;
+}
+.ready-get-started .social-media-buttons button {
+  max-width: 375px;
+  padding: 16px 0;
+}
+
+.best-practices-ratings {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 130px 0 150px;
+}
+.best-practices-ratings .ratings-card {
+  max-width: 365px;
+  margin: 5px 0;
+}
+.best-practices-ratings .card-body {
+  padding: 20px 120px 20px 15px;
+}
+.best-practices-ratings .card-body .small {
+  font-size: 10px;
+}
+.best-practices-ratings .card-img-top {
+  max-width: 420px;
+}
+.best-practices-ratings .ratings-footer {
+  padding: 15px;
+  font-size: 12px;
+}
+.best-practices-ratings .ratings-footer span {
+  margin: 0 0 0 8px;
+}
+
+.ratings {
+  margin: 15px 0;
+}
+
+.trial {
+  background: url("images/doctor1.jpg") no-repeat;
+  background-size: cover;
+}
+.trial .trial-row {
+  padding: 130px 0;
+  list-style: none;
+}
+.trial .trial-row .row {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.trial .trial-row button {
+  margin: 20px 0 0 0;
+  padding: 10px 20px 10px 0;
+}
+.trial .trial-row .button {
+  padding: 10px 40px;
+}
+.trial .trial-row p {
+  margin: 15px 0 25px 0;
+}
+
+.news-card {
+  margin: 30px 0 0 0;
+}
+.news-card .card-body {
+  padding: 15px;
+}
+
+.review-enquiry {
+  background: url("images/doctor.jpg") no-repeat;
+  background-size: cover;
+}
+.review-enquiry .review {
+  padding: 135px 0 110px;
+}
+.review-enquiry .review h4, .review-enquiry .review p {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 10px;
+}
+.review-enquiry .enquiry {
+  background-color: rgb(75, 92, 187);
+  padding: 60px 0;
+}
+.review-enquiry .enquiry .equiry-text {
+  margin: 0 60px 0 0;
+}
+.review-enquiry .enquiry button {
+  padding: 5px 80px;
+}
+
+footer {
+  max-width: 1150px;
+  margin: 0 auto;
+  font-size: 12px;
+}
+footer .copyrights {
+  margin: 15px 0 0 0;
+}
+
+.quick-links {
+  padding: 50px 0;
+}
+.quick-links h4 {
+  margin: 0 0 25px 0;
+}
+.quick-links p {
+  line-height: 30px;
+}
+.quick-links .social-media-icons {
+  margin: 30px 0;
+}
+.quick-links .social-media-icons i {
+  padding: 0 15px 0 0;
+}
+
+.search {
+  padding: 150px 0;
+  border: 1px solid #e0e0e0;
+}
+.search aside {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.description {
+  max-width: 445px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.description button {
+  border-radius: 25px;
+  padding: 5px 35px;
+}
+.description a {
+  font-size: 15px;
+  text-decoration: none;
+}
+.description .col-margin {
+  margin: 0 15px 0 0;
+}
+.description .h2 {
+  margin: 50px 0 40px 0;
+}
+
+.scroll-content {
+  margin: 20px 0 0 0;
+  font-size: 12px;
+}
+.scroll-content .image {
+  height: 172px;
+  width: 170px;
+}
+.scroll-content .scroll-card {
+  border: 0;
+  max-width: 370px;
+}
+.scroll-content .card-content {
+  padding: 10px;
+}
+.scroll-content .scroll-card-footer {
+  padding: 10px;
+}
+.scroll-content .bi-suit-heart {
+  margin: 0 30px 0 0;
+}
+
+.fade-out {
+  opacity: 0.3;
+}
+
+/*# sourceMappingURL=style.css.map */

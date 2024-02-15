@@ -1,0 +1,30 @@
+.review-enquiry {
+    background: url("images/doctor.jpg") no-repeat;
+    background-size: cover;
+    
+    
+    .review {
+        padding: 135px 0 110px;
+        @extend %transparent-background;
+
+        h4, p {
+            margin: 0 auto;
+            max-width: 700px;
+            padding: 10px;
+        }
+    }
+
+    .enquiry {
+        background-color: rgba(75, 92, 187);
+        padding: 60px 0;
+
+        .equiry-text {
+            margin: 0 60px 0 0;
+        }
+
+        button {
+            @extend %button-border;
+            padding: 5px 80px;;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.best-practices-ratings {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 130px 0 150px;
+
+    .ratings-card {
+        max-width: 365px;
+        margin: 5px 0;
+    }
+
+    .card {
+        @extend %button-border;
+    }
+
+    .card-body {
+        padding: 20px 120px 20px 15px;
+
+        .small {
+            font-size: 10px;
+        }
+    }
+
+    .card-img-top {
+        max-width: 420px;
+    }
+
+    .ratings-footer {
+        padding: 15px;
+        font-size: 12px;
+
+        span {
+            margin: 0 0 0 8px;
+        }
+        @extend %view-arrow;
+    }
+}
+
+.ratings {
+    margin: 15px 0;
+}
