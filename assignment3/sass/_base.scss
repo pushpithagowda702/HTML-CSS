@@ -36,3 +36,12 @@ $background: #f9f8fd;
 .full-width {
     width: 100%;
 }
+
+.row {
+    --bs-gutter-x: 0;
+}
+
+.navbar-toggler {
+    font-size: 15px;
+    border: 0;
+}

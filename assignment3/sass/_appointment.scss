@@ -1,6 +1,6 @@
 .bg-container {
     background-color: $background;
-    padding: 90px 0;
+    padding: 90px 10px;
 
     p {
         font-size: 20px;
@@ -9,7 +9,6 @@
 
     .cards {
         margin: 0 auto 60px;
-        max-width: 1200px;
     }
 
     .custom-card {
@@ -22,8 +21,8 @@
     .card-logo {
         width: 130px;
         height: 130px;
-        border: 10px solid $background;
-        padding: 35px;
+        border: 5px solid $background;
+        padding: 38px;
         margin: 0 auto;
         top: -70px;
     }

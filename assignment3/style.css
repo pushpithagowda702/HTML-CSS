@@ -32,14 +32,26 @@
   width: 100%;
 }
 
+.row {
+  --bs-gutter-x: 0;
+}
+
+.navbar-toggler {
+  font-size: 15px;
+  border: 0;
+}
+
 header.header-padding {
   padding: 22px 0;
 }
-header .have-account {
-  margin: 0 -10px 0 30px;
+header .navbar-nav {
+  margin: 0 35px 0 0;
 }
-header .navbar-brand {
-  margin: 0 60px 0 0px;
+header .navbar-nav .nav-item {
+  margin: 0 15px 0 0;
+}
+header .have-account {
+  margin: 0 10px 0 0;
 }
 header .create-account {
   padding: 10px 50px;
@@ -51,7 +63,11 @@ header .create-account {
 .image-background {
   background: url("images/background.jpg") no-repeat;
   background-size: cover;
-  padding: 200px 0 100px 0;
+  background-attachment: fixed;
+}
+.image-background .background-overlay {
+  background-color: rgba(178, 178, 178, 0.2);
+  padding: 200px 10px 100px;
 }
 .image-background .h1 {
   max-width: 650px;
@@ -64,15 +80,11 @@ header .create-account {
   max-width: 300px;
   border: 0;
 }
-.image-background .toggle-bar {
-  max-width: 900px;
-  margin: 80px auto;
+.image-background .search-bar {
+  margin: 70px 0;
 }
-.image-background .toggle-bar .toggle {
+.image-background .search-bar .search-category {
   padding: 18px;
-}
-.image-background .toggle-bar .dropdown-toggle {
-  text-decoration: none;
 }
 .image-background .play {
   width: 40px;
@@ -80,7 +92,7 @@ header .create-account {
 
 .bg-container {
   background-color: #f9f8fd;
-  padding: 90px 0;
+  padding: 90px 10px;
 }
 .bg-container p {
   font-size: 20px;
@@ -88,7 +100,6 @@ header .create-account {
 }
 .bg-container .cards {
   margin: 0 auto 60px;
-  max-width: 1200px;
 }
 .bg-container .custom-card {
   width: 260px;
@@ -98,8 +109,8 @@ header .create-account {
 .bg-container .card-logo {
   width: 130px;
   height: 130px;
-  border: 10px solid #f9f8fd;
-  padding: 35px;
+  border: 5px solid #f9f8fd;
+  padding: 38px;
   margin: 0 auto;
   top: -70px;
 }
@@ -113,7 +124,7 @@ header .create-account {
 }
 
 .ready-get-started {
-  padding: 150px 0;
+  padding: 150px 10px;
 }
 .ready-get-started .ready-content {
   max-width: 370px;
@@ -121,11 +132,11 @@ header .create-account {
 }
 .ready-get-started p {
   font-size: 18px;
-  margin: 20px 0 0;
+  margin: 20px 0;
 }
 .ready-get-started .social-media-buttons .facebook {
   background-color: #3f51b5;
-  margin: 0 0 15px 0;
+  margin: 0 0 15px;
 }
 .ready-get-started .social-media-buttons .google {
   background-color: #f44336;
@@ -136,13 +147,15 @@ header .create-account {
 }
 
 .best-practices-ratings {
-  max-width: 1150px;
+  padding: 130px 10px 150px;
+}
+.best-practices-ratings .header {
+  max-width: 1130px;
   margin: 0 auto;
-  padding: 130px 0 150px;
 }
 .best-practices-ratings .ratings-card {
   max-width: 365px;
-  margin: 5px 0;
+  margin: 8px;
 }
 .best-practices-ratings .card-body {
   padding: 20px 120px 20px 15px;
@@ -170,12 +183,12 @@ header .create-account {
   background-size: cover;
 }
 .trial .trial-row {
-  padding: 130px 0;
+  padding: 130px 10px;
   list-style: none;
 }
-.trial .trial-row .row {
-  max-width: 1100px;
-  margin: 0 auto;
+.trial .trial-row .content {
+  max-width: 450px;
+  margin: 0 auto 25px auto;
 }
 .trial .trial-row button {
   margin: 20px 0 0 0;
@@ -200,12 +213,11 @@ header .create-account {
   background-size: cover;
 }
 .review-enquiry .review {
-  padding: 135px 0 110px;
+  padding: 135px 10px 110px;
 }
-.review-enquiry .review h4, .review-enquiry .review p {
+.review-enquiry .review h4 {
   margin: 0 auto;
   max-width: 700px;
-  padding: 10px;
 }
 .review-enquiry .enquiry {
   background-color: rgb(75, 92, 187);
@@ -223,12 +235,15 @@ footer {
   margin: 0 auto;
   font-size: 12px;
 }
+footer.footer-menu {
+  padding: 10px;
+}
 footer .copyrights {
   margin: 15px 0 0 0;
 }
 
 .quick-links {
-  padding: 50px 0;
+  padding: 50px 10px;
 }
 .quick-links h4 {
   margin: 0 0 25px 0;
@@ -244,12 +259,8 @@ footer .copyrights {
 }
 
 .search {
-  padding: 150px 0;
+  padding: 150px 10px;
   border: 1px solid #e0e0e0;
-}
-.search aside {
-  margin: 0 auto;
-  max-width: 600px;
 }
 
 .description {

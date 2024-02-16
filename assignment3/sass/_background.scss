@@ -1,7 +1,12 @@
 .image-background {
     background: url("images/background.jpg") no-repeat;
     background-size: cover;
-    padding: 200px 0 100px 0;
+    background-attachment: fixed;
+
+    .background-overlay {
+        background-color: rgba(178, 178, 178, 0.2);
+        padding: 200px 10px 100px;
+    }
 
     .h1 {
         max-width: 650px;
@@ -17,16 +22,10 @@
         border: 0;
     }
 
-    .toggle-bar {
-        max-width: 900px;
-        margin: 80px auto;
-
-        .toggle {
+    .search-bar {
+        margin: 70px 0;
+        .search-category {
             padding: 18px;
-        }
-
-        .dropdown-toggle {
-            text-decoration: none;
         }
     }
 

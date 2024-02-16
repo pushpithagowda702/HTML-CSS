@@ -14,34 +14,45 @@
 <body>
     <header class="container header-padding">
         <nav class="navbar navbar-expand-lg bold">
-            <a class="navbar-brand" href="#"><img src="images/logo.png">edic</a>
-            <div class="nav full-width justify-content-around">
-                <a class="nav-item nav-link text-dark" href="#">HOME</a>
-                <a class="nav-item nav-link text-secondary" href="#">FOR PATIENTS</a>
-                <a class="nav-item nav-link text-secondary" href="#">FOR PHYSICIANS</a>
-                <a class="nav-item nav-link text-secondary" href="#">CONTACT</a>
-                <a class="nav-item nav-link text-dark have-account" href="#">Already have account?</a>
-                <button class="nav-item btn create-account">Create account</button>
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="images/logo.png"> edic</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-menu">
+                    <ul class="navbar-nav">
+                        <a class="nav-item nav-link text-dark" href="#">HOME</a>
+                        <a class="nav-item nav-link text-secondary" href="#">FOR PATIENTS</a>
+                        <a class="nav-item nav-link text-secondary" href="#">FOR PHYSICIANS</a>
+                        <a class="nav-item nav-link text-secondary" href="#">CONTACT</a>
+                    </ul>
+                    <a class="nav-item nav-link text-dark have-account" href="#">Already have account?</a>
+                    <button class="nav-item btn create-account">Create account</button>
+
+                </div>
             </div>
         </nav>
     </header>
-    <div class="image-background text-light text-center">
-        <h1 class="h1 full-width">Find and book a Doctor/GP appointment right now</h1>
-        <p>Search Doctors & Book appointments online, instantly</p>
-        <div class="row toggle-bar full-width">
-            <select class="toggle bg-light search-practice-col text-muted text-center">
-                <option value="" disabled selected hidden>Practice Category</option>
-            </select>
-            <div class="bg-light search-practice-col text-muted toggle">Enter your
-                postcode <i class="bi bi-send right"></i></div>
-            <button class="btn btn-primary search-practice-col toggle">Search Practice</button>
+    <section class="image-background text-light text-center">
+        <div class="background-overlay">
+            <h1 class="h1 full-width">Find and book a Doctor/GP appointment right now</h1>
+            <p>Search Doctors & Book appointments online, instantly</p>
+            <div class="row search-bar justify-content-center">
+                <select class="search-category bg-light search-practice-col text-muted text-center">
+                    <option value="" disabled selected hidden>Practice Category</option>
+                </select>
+                <span class="bg-light search-practice-col text-muted search-category">Enter your
+                    postcode <i class="bi bi-send right"></i></span>
+                <button class="btn btn-primary search-practice-col search-category">Search Practice</button>
+            </div>
+            <h1 class="display-1"><i class="bi bi-play-circle"></i></h1>
         </div>
-        <h1 class="display-1"><i class="bi bi-play-circle"></i></h1>
-    </div>
-    <div class="bg-container text-center">
+    </section>
+    <section class="bg-container text-center">
         <h2 class="h2">Find and book a Doctor/GP appointment right now</h2>
         <p class="text-muted">Choose a time for you.</p>
-        <div class="row cards full-width">
+        <div class="row cards justify-content-center">
             <div class="card custom-card">
                 <h1 class="card card-logo rounded-circle bi bi-hospital text-center text-info"></h1>
                 <h5 class="card-content">Search doctor, 24/7</h5>
@@ -63,10 +74,10 @@
                 <h6 class="card-content text-muted">No waiting, no hold music</h6>
             </div>
         </div>
-    </div>
+    </section>
     <div class="search">
         <div class="row">
-            <section class="col description">
+            <section class="col-md-6 description">
                 <button class="btn btn-primary col-margin">Search</button>
                 <a class="col bold col-margin" href="#">Book Appointment</a>
                 <a class="col bold" href="#">Review Service</a>
@@ -75,7 +86,7 @@
                     to a wide variety of highly trained specialists, we help you find the right doctor in a
                     location convenient for you</p>
             </section>
-            <aside class="col clearfix scrolling-content">
+            <aside class="col-md-6 clearfix scrolling-content">
                 <div class="scroll-content clearfix fade-out">
                     <img src="images/background.jpg" class="image left" />
                     <div class="card scroll-card full-width left">
@@ -139,10 +150,9 @@
             </aside>
         </div>
     </div>
-    </div>
-    <div class="ready-started">
+    <section class="ready-started">
         <div class="row ready-get-started">
-            <div class="col">
+            <div class="col-md-6 ">
                 <div class="ready-content">
                     <h1 class="h1 text-light">Ready to get started</h1>
                     <p class="text-light">Every day billions of people struggle for better healthcare. We want to
@@ -150,7 +160,7 @@
                         that. Globally.</p>
                 </div>
             </div>
-            <div class="col social-media-buttons text-center">
+            <div class="col-md-6 social-media-buttons text-center">
                 <button class="facebook btn full-width bi bi-facebook text-light"> Sign up
                     with
                     Facebook</button><br>
@@ -158,21 +168,26 @@
                     Google+</button>
             </div>
         </div>
-    </div>
-    <div class="best-practices-ratings full-width">
-        <div class="row">
+    </section>
+    <section class="best-practices-ratings full-width">
+        <div class="row header">
             <h3 class="col h3">Browse best rated practices</h3>
-            <nav class="col navbar navbar-expand-lg navbar-light justify-content-around">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#">Dentist</a>
-                    <a class="nav-item nav-link" href="#">Pediatric</a>
-                    <a class="nav-item nav-link" href="#">Oncology</a>
-                    <a class="nav-item nav-link" href="#">Family practice</a>
-                    <a role="button" class="nav-item nav-link bi bi-list bold text-dark" href="#"></a>
+            <nav class="col-2 col-md-6 navbar navbar-expand-lg justify-content-end">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#best-practice-menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="best-practice-menu">
+                    <ul class="navbar-nav">
+                        <a class="nav-item nav-link" href="#">Dentist</a>
+                        <a class="nav-item nav-link" href="#">Pediatric</a>
+                        <a class="nav-item nav-link" href="#">Oncology</a>
+                        <a class="nav-item nav-link" href="#">Family practice</a>
+                    </ul>
                 </div>
             </nav>
         </div>
-        <div class="row ratings">
+        <div class="row ratings justify-content-lg-center justify-content-md-between justify-content-sm-center">
             <div class="card ratings-card">
                 <img class="card-img-top full-width" src="images/ratings-1.png" alt="Card image cap">
                 <div class="card-body">
@@ -222,82 +237,81 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="trial">
-        <div class="trial-row">
-            <div class="row text-light">
-                <div class="col-sm-6">
-                    <h3 class="h3">Free for Patients (always)</h3>
-                    <p>You can make all your healthcare appointments through any internet connected device, at any time
-                        of
-                        the day or night, with just a few clicks.</p>
-                    <li class="bi bi-check2-square"> Search Online Health Directory</li>
-                    <li class="bi bi-check2-square"> Book an Appointment for Free</li>
-                    <li class="bi bi-check2-square"> Review your doctor</li>
-                    <p class="display-1 my-3"><sup><small class="h2">$ </small></sup>0,<span class="h6">00</span>
-                    </p>
-                    <button class="btn btn-light button">FREE SIGN UP </button><button
-                        class="btn btn-light">&rarr;</button>
+    </section>
+    <section class="trial">
+        <div class="trial-row row text-light">
+            <div class="col-sm-6 content">
+                <h3 class="h3">Free for Patients (always)</h3>
+                <p>You can make all your healthcare appointments through any internet connected device, at any time
+                    of
+                    the day or night, with just a few clicks.</p>
+                <li class="bi bi-check2-square"> Search Online Health Directory</li>
+                <li class="bi bi-check2-square"> Book an Appointment for Free</li>
+                <li class="bi bi-check2-square"> Review your doctor</li>
+                <p class="display-1 my-3"><sup><small class="h2">$ </small></sup>0,<span class="h6">00</span>
+                </p>
+                <button class="btn btn-light button">FREE SIGN UP </button><button class="btn btn-light">&rarr;</button>
+            </div>
+            <div class="col-sm-6 content">
+                <h3 class="h3">I'm practice</h3>
+                <p>You can make all your healthcare appointments through any internet connected device, at any time
+                    of
+                    the day or night, with just a few clicks.</p>
+                <li class="bi bi-check2-square"> Search Online Health Directory</li>
+                <li class="bi bi-check2-square"> Book an Appointment for Free</li>
+                <li class="bi bi-check2-square"> Review your doctor</li>
+                <p class="display-1 my-3"><sup><small class="h2">$ </small></sup>9,<span class="h1">99 </span><small
+                        class="display-6"> month</small></p>
+                <button class="btn btn-light button">FREE TRIAL</button><button class="btn btn-light">&rarr;</button>
+            </div>
+        </div>
+    </section>
+    <section class="best-practices-ratings">
+        <div class="header full-width">
+            <h1 class="h1">Latest Health & Medical News</h1>
+            <p class="lead">Suspendisse sed viverra ex. Fusce et lacus a ex rutrum tristique</p>
+        </div>
+            <div class="row news-card justify-content-lg-center justify-content-md-between justify-content-sm-center">
+                <div class="card ratings-card">
+                    <img class="card-img-top full-width" src="images/ratings-1.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">What's the difference between a nutritionist and a dietitian</h5>
+                        <p class="text-muted">1 january 2016</p>
+                    </div>
+                    <div class="bg-light ratings-footer">
+                        <span class="bi bi-chat"> 26</span>
+                        <span class="bi bi-suit-heart"> 135</span>
+                        <button class="bg-white"> &rarr;</button><button class="bg-white arrow">View</button>
+                    </div>
                 </div>
-                <div class="col-sm-6">
-                    <h3 class="h3">I'm practice</h3>
-                    <p>You can make all your healthcare appointments through any internet connected device, at any time
-                        of
-                        the day or night, with just a few clicks.</p>
-                    <li class="bi bi-check2-square"> Search Online Health Directory</li>
-                    <li class="bi bi-check2-square"> Book an Appointment for Free</li>
-                    <li class="bi bi-check2-square"> Review your doctor</li>
-                    <p class="display-1 my-3"><sup><small class="h2">$ </small></sup>9,<span class="h1">99 </span><small
-                            class="display-6"> month</small></p>
-                    <button class="btn btn-light button">FREE TRIAL</button><button
-                        class="btn btn-light">&rarr;</button>
+                <div class="card ratings-card">
+                    <img class="card-img-top full-width" src="images/ratings-1.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">What's the difference between a nutritionist and a dietitian</h5>
+                        <p class="text-muted">1 january 2016</p>
+                    </div>
+                    <div class="bg-light ratings-footer">
+                        <span class="bi bi-chat"> 26</span>
+                        <span class="bi bi-suit-heart"> 135</span>
+                        <button class="bg-white"> &rarr;</button><button class="bg-white arrow">View</button>
+                    </div>
+                </div>
+                <div class="card ratings-card">
+                    <img class="card-img-top full-width" src="images/ratings-1.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">What's the difference between a nutritionist and a dietitian</h5>
+                        <p class="text-muted">1 july 2016</p>
+                    </div>
+                    <div class="bg-light ratings-footer">
+                        <span class="bi bi-chat"> 26</span>
+                        <span class="bi bi-suit-heart"> 135</span>
+                        <button class="bg-white"> &rarr;</button><button class="bg-white arrow">View</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="best-practices-ratings">
-        <h1 class="h1">Latest Health & Medical News</h1>
-        <p class="lead">Suspendisse sed viverra ex. Fusce et lacus a ex rutrum tristique</p>
-        <div class="row news-card">
-            <div class="card ratings-card">
-                <img class="card-img-top full-width" src="images/ratings-1.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">What's the difference between a nutritionist and a dietitian</h5>
-                    <p class="text-muted">1 january 2016</p>
-                </div>
-                <div class="bg-light ratings-footer">
-                    <span class="bi bi-chat"> 26</span>
-                    <span class="bi bi-suit-heart"> 135</span>
-                    <button class="bg-white"> &rarr;</button><button class="bg-white arrow">View</button>
-                </div>
-            </div>
-            <div class="card ratings-card">
-                <img class="card-img-top full-width" src="images/ratings-1.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">What's the difference between a nutritionist and a dietitian</h5>
-                    <p class="text-muted">1 january 2016</p>
-                </div>
-                <div class="bg-light ratings-footer">
-                    <span class="bi bi-chat"> 26</span>
-                    <span class="bi bi-suit-heart"> 135</span>
-                    <button class="bg-white"> &rarr;</button><button class="bg-white arrow">View</button>
-                </div>
-            </div>
-            <div class="card ratings-card">
-                <img class="card-img-top full-width" src="images/ratings-1.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">What's the difference between a nutritionist and a dietitian</h5>
-                    <p class="text-muted">1 july 2016</p>
-                </div>
-                <div class="bg-light ratings-footer">
-                    <span class="bi bi-chat"> 26</span>
-                    <span class="bi bi-suit-heart"> 135</span>
-                    <button class="bg-white"> &rarr;</button><button class="bg-white arrow">View</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="review-enquiry text-light text-center">
+    </section>
+    <section class="review-enquiry text-light text-center">
         <div class="review">
             <h4><i>"The best healthcare agency I have ever used. Their staff in the office are so friendly
                     and helpful, especially the two."</i></h4>
@@ -308,7 +322,7 @@
                 staff.</span>
             <button class="btn btn-light">ENQUIRE NOW</button>
         </div>
-    </div>
+    </section>
     <footer class="quick-links full-width">
         <div class="row">
             <div class="col-md-4">
@@ -323,7 +337,7 @@
                     <i class="h3 bi bi-google text-danger"></i>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-sm-2">
                 <h4>Patients</h4>
                 <p>
                     Why join? <br>
@@ -332,7 +346,7 @@
                     FAQ
                 </p>
             </div>
-            <div class="col">
+            <div class="col-sm-2">
                 <h4>Practices</h4>
                 <p>
                     Why join? <br>
@@ -341,7 +355,7 @@
                     FAQ
                 </p>
             </div>
-            <div class="col">
+            <div class="col-sm-2">
                 <h4>Practices</h4>
                 <p>
                     Why join? <br>
@@ -352,7 +366,7 @@
                     FAQ
                 </p>
             </div>
-            <div class="col">
+            <div class="col-sm-2">
                 <h4>Practices</h4>
                 <p>
                     Why join? <br>
@@ -366,15 +380,20 @@
         </div>
     </footer>
     <hr>
-    <footer class="clearfix">
-        <nav class="navbar navbar-expand-lg navbar-light left">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">HOME</a>
-                <a class="nav-item nav-link" href="#">ABOUT</a>
-                <a class="nav-item nav-link" href="#">SERVICES</a>
-                <a class="nav-item nav-link" href="#">BLOG</a>
-                <a class="nav-item nav-link" href="#">TERMS</a>
-                <a class="nav-item nav-link" href="#">CONTACT US</a>
+    <footer class="footer-menu clearfix">
+        <nav class="navbar navbar-expand-lg left">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#best-practice-menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="best-practice-menu">
+                <ul class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">HOME</a>
+                    <a class="nav-item nav-link" href="#">ABOUT</a>
+                    <a class="nav-item nav-link" href="#">SERVICES</a>
+                    <a class="nav-item nav-link" href="#">BLOG</a>
+                    <a class="nav-item nav-link" href="#">TERMS</a>
+                    <a class="nav-item nav-link" href="#">CONTACT US</a>
+                </ul>
             </div>
         </nav>
         <p class="copyrights right">ALL RIGHTS RESERVED @ CODEPIXEL</p>

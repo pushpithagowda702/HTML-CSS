@@ -1,11 +1,14 @@
 .best-practices-ratings {
-    max-width: 1150px;
-    margin: 0 auto;
-    padding: 130px 0 150px;
+    padding: 130px 10px 150px;
+
+    .header {
+        max-width: 1130px;
+        margin: 0 auto;
+    }
 
     .ratings-card {
         max-width: 365px;
-        margin: 5px 0;
+        margin: 8px;
     }
 
     .card {

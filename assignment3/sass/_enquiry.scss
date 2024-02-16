@@ -4,13 +4,12 @@
     
     
     .review {
-        padding: 135px 0 110px;
+        padding: 135px 10px 110px;
         @extend %transparent-background;
 
-        h4, p {
+        h4 {
             margin: 0 auto;
             max-width: 700px;
-            padding: 10px;
         }
     }
 
