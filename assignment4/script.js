@@ -8,9 +8,9 @@ function validate() {
     }
 }
 
-function progressBar(timing) {
-    var timeArray = timing.split(":");
-    var totalTimeSeconds = Number.parseInt(timeArray[0] * 3600) + Number.parseInt(timeArray[1] * 60) + Number.parseInt(timeArray[2]);
+function progressBar(time) {
+    var timeArray = time.split(":");
+    var totalTimeSeconds = parseInt(timeArray[0] * 3600) + parseInt(timeArray[1] * 60) + parseInt(timeArray[2]);
     var increaseWidth = Math.round(100 / ((totalTimeSeconds) / 5));
     var width = 0;
     var pBar = document.getElementById("pBar");
