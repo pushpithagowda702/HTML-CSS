@@ -12,13 +12,15 @@ $background: #f9f8fd;
 %view-arrow {
     button {
         border: 1px;
-        float: right;
         padding: 5px 15px;
+        .arrow {
+            border-left: 1px solid #e0e0e0;
+            margin: 0 0 0 20px;
+            padding: 0 0 0 5px;
+        }
     }
 
-    .arrow {
-        border-right: 1px solid #e0e0e0;
-    }
+
 }
 
 .right {

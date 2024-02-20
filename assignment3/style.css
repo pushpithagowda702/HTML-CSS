@@ -9,11 +9,12 @@
 
 .scroll-content button, .best-practices-ratings .ratings-footer button {
   border: 1px;
-  float: right;
   padding: 5px 15px;
 }
-.scroll-content .arrow, .best-practices-ratings .ratings-footer .arrow {
-  border-right: 1px solid #e0e0e0;
+.scroll-content button .arrow, .best-practices-ratings .ratings-footer button .arrow {
+  border-left: 1px solid #e0e0e0;
+  margin: 0 0 0 20px;
+  padding: 0 0 0 5px;
 }
 
 .right {
