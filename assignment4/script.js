@@ -10,8 +10,8 @@ function validate() {
 
 function progressBar(time) {
     var timeArray = time.split(":");
-    var totalTimeSeconds = parseInt(timeArray[0] * 3600) + parseInt(timeArray[1] * 60) + parseInt(timeArray[2]);
-    var increaseWidth = Math.round(100 / ((totalTimeSeconds) / 5));
+    var totalTimeSeconds = (parseInt(timeArray[0]) * 3600) + (parseInt(timeArray[1]) * 60) + parseInt(timeArray[2]);
+    var increaseWidth = 100 / ((totalTimeSeconds) / 5);
     var width = 0;
     var pBar = document.getElementById("pBar");
     var hour = parseInt(timeArray[0]);
@@ -21,6 +21,7 @@ function progressBar(time) {
     var count = 0;
 
     function updateTime() {
+        console.log("update time " + count + " " + width)
         var time = document.getElementById("timerForm").elements[0];
         time.value = "";
 
@@ -34,7 +35,6 @@ function progressBar(time) {
         if (count == 4 && width + increaseWidth <= 100) {
             width += increaseWidth;
             pBar.style.width = width + "%";
-            pBar.innerHTML = width + "%";
             count = 0;
         } else {
             count++;
