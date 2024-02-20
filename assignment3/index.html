@@ -20,8 +20,8 @@
                     aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbar-menu">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse justify-content-around" id="navbar-menu">
+                    <ul class="navbar-nav justify-content-between">
                         <a class="nav-item nav-link text-dark" href="#">HOME</a>
                         <a class="nav-item nav-link text-secondary" href="#">FOR PATIENTS</a>
                         <a class="nav-item nav-link text-secondary" href="#">FOR PHYSICIANS</a>
@@ -41,10 +41,12 @@
             <div class="row search-bar justify-content-center">
                 <select class="search-category bg-light search-practice-col text-muted text-center">
                     <option value="" disabled selected hidden>Practice Category</option>
+                    <option value="category-1">Category 1</option>
+                    <option value="category-1">Category 2</option>
                 </select>
-                <span class="bg-light search-practice-col text-muted search-category">Enter your
-                    postcode <i class="bi bi-send right"></i></span>
-                <button class="btn btn-primary search-practice-col search-category">Search Practice</button>
+                <input type="text" class="bg-light postcode-col search-category text-center" placeholder="Enter your postcode">
+                <i class="bi bi-send send-icon bg-light text-muted"></i>
+                <button class="btn btn-primary search-practice-col search-category"> Search Practice</button>
             </div>
             <h1 class="display-1 bi bi-play-circle"></h1>
         </div>
@@ -54,22 +56,22 @@
         <p class="text-muted">Choose a time for you.</p>
         <div class="row cards justify-content-center">
             <div class="card custom-card">
-                <h1 class="card card-logo rounded-circle bi bi-hospital text-center text-info"></h1>
+                <h1 class="card-logo rounded-circle bi bi-hospital text-center text-info bg-white"></h1>
                 <h5 class="card-content">Search doctor, 24/7</h5>
                 <h6 class="card-content text-muted">No waiting, no hold music</h6>
             </div>
             <div class="card custom-card">
-                <h1 class="card card-logo rounded-circle bi bi-heart-pulse text-danger"></h1>
+                <h1 class="card-logo rounded-circle bi bi-heart-pulse text-danger bg-white"></h1>
                 <h5 class="card-content">Search doctor, 24/7</h5>
                 <h6 class="card-content text-muted">No waiting, no hold music</h6>
             </div>
             <div class="card custom-card">
-                <h1 class="card card-logo rounded-circle bi bi-clock text-success"></h1>
+                <h1 class="card-logo rounded-circle bi bi-clock text-success bg-white"></h1>
                 <h5 class="card-content">Search doctor, 24/7</h5>
                 <h6 class="card-content text-muted">No waiting, no hold music</h6>
             </div>
             <div class="card custom-card">
-                <h1 class="card card-logo rounded-circle bi bi-bar-chart-fill text-primary"></h1>
+                <h1 class="card-logo rounded-circle bi bi-bar-chart-fill text-primary bg-white"></h1>
                 <h5 class="card-content">Search doctor, 24/7</h5>
                 <h6 class="card-content text-muted">No waiting, no hold music</h6>
             </div>
@@ -250,7 +252,7 @@
                 <li class="bi bi-check2-square"> Review your doctor</li>
                 <p class="display-1 my-3"><sup><small class="h2">$ </small></sup>0,<span class="h6">00</span>
                 </p>
-                <button class="btn btn-light button">FREE SIGN UP </button><button class="btn btn-light">&rarr;</button>
+                <button class="btn btn-light button full-width">FREE SIGN UP <span class="arrow">&rarr;</span></button>
             </div>
             <div class="col-sm-6 content">
                 <h3 class="h3">I'm practice</h3>
@@ -262,7 +264,7 @@
                 <li class="bi bi-check2-square"> Review your doctor</li>
                 <p class="display-1 my-3"><sup><small class="h2">$ </small></sup>9,<span class="h1">99 </span><small
                         class="h5"> month</small></p>
-                <button class="btn btn-light button">FREE TRIAL</button><button class="btn btn-light">&rarr;</button>
+                <button class="btn btn-light button full-width">FREE TRIAL <span class="arrow">&rarr;</span></button>
             </div>
         </div>
     </section>
