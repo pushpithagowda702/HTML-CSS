@@ -1,0 +1,27 @@
+md-toolbar {
+  text-align: center;
+}
+
+md-list-item:hover {
+  background: #c3c1c1;
+  transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.toggle-button {
+  font-size: 34px;
+}
+
+.margin {
+  margin: 20px 0 0 0;
+}
+
+.custom-dialog {
+  width: 400px;
+  height: 600px;
+}
+.custom-dialog .dialog-image {
+  width: 250px;
+  height: 300px;
+}
+
+/*# sourceMappingURL=style.css.map */

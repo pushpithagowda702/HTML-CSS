@@ -1,0 +1,16 @@
+<div layout="row" layout-wrap="">
+    <div ng-if="$ctrl.hasMovies()">No movies</div>
+    <md-card ng-if="!$ctrl.hasMovies()" ng-repeat="movie in $ctrl.displayMovie" flex="100" flex-gt-sm="30">
+        <md-button ng-click="$ctrl.updateInfo($event, movie)" aria-label="Update Information">
+            <img ng-src="{{movie.Poster}}">
+        </md-button>
+        <md-card-content>
+            <span ng-repeat="star in [1,2,3,4,5]">&#9733;</span>
+            <p>Year: <span>{{movie.Year}}</span></p>
+            <p>Genre: <span ng-repeat="genre in movie.Genre track by $index">{{genre}}</span></p>
+            <p>Director: <span>{{movie.Director}}</span></p>
+            <p>Actors: <span>{{movie.Actors}}</span></p>
+            <p>Plot: <span>{{movie.Plot}}</span></p>
+        </md-card-content>
+    </md-card>
+</div>

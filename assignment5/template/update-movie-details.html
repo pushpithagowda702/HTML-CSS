@@ -1,0 +1,37 @@
+<md-dialog flex-xs="" class="custom-dialog">
+    <form name="movieCard">
+        <md-toolbar flex="" class="popup">
+            <h3>{{ displayMovie.Title }}</h3>
+        </md-toolbar>
+        <md-dialog-content layout="column" layout-margin>
+            <img class="dialog-image" ng-src="{{displayMovie.Poster}}">
+            <div class="row">
+            <span ng-repeat="star in [1,2,3,4,5]">&#9733;</span>
+        </div>
+            <md-input-container flex="30">
+                <label>Year</label>
+                <input ng-model="displayMovie.Year">
+                <!-- <span ng-show="movieCard.year.$error.required">Cannot be blank</span> -->
+            </md-input-container>
+            <md-input-container flex="30">
+                <label>Genre</label>
+                <input ng-model="displayMovie.Genre">
+                <!-- <span ng-show="movieCard.genre.$error.required">Cannot be blank</span> -->
+            </md-input-container>
+            <md-input-container flex="30">
+                <label>Director</label>
+                <input ng-model="displayMovie.Director">
+                <!-- <span ng-show="movieCard.director.$error.required">Cannot be blank</span> -->
+            </md-input-container>
+            <md-input-container flex="30">
+                <label>Actors</label>
+                <input ng-model="displayMovie.Actors">
+                <!-- <span ng-show="movieCard.actors.$error.required">Cannot be blank</span> -->
+            </md-input-container>
+        </md-dialog-content>
+        <md-dialog-actions>
+            <md-button ng-click="clearDialog()">Reset</md-button>
+            <md-button ng-click="updateMovie(displayMovie)">Save</md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>
