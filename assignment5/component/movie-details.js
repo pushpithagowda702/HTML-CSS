@@ -17,7 +17,6 @@ function displayMovieDetails($mdDialog, genreService, $scope, movieTitle, $http)
     vm.genreSelected = genreService.getGenre();
     vm.displayMovie = [];
     vm.searchByMovieName = movieTitle.getMovieTitle();
-    var productRatings = [];
 
     $scope.$watch(function() {
         return localStorage.length
