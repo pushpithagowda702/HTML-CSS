@@ -105,7 +105,7 @@ function displayMovieDetails($mdDialog, genreService, $scope, movieTitle, $http)
     }
 
     function DialogController($scope, $mdDialog, displayMovie) {
-        $scope.displayMovie = displayMovie;
+        $scope.displayMovieCard = displayMovie;
 
         $scope.updateMovie = function (answer) {
             localStorage.setItem(displayMovie.Title.toLowerCase(), JSON.stringify(answer));
@@ -113,10 +113,14 @@ function displayMovieDetails($mdDialog, genreService, $scope, movieTitle, $http)
         };
 
         $scope.clearDialog = function () {
-            $scope.displayMovie.Year = null;
-            $scope.displayMovie.Actors = null;
-            $scope.displayMovie.Genre = null;
-            $scope.displayMovie.Director = null;
+            $scope.displayMovieCard.Year = null;
+            $scope.displayMovieCard.Actors = null;
+            $scope.displayMovieCard.Genre = null;
+            $scope.displayMovieCard.Director = null;
+        };
+
+        $scope.closeDialog = function () {
+            $mdDialog.hide();
         };
 
     }
