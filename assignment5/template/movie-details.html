@@ -5,7 +5,7 @@
             <img ng-src="{{movie.Poster}}">
         </md-button>
         <md-card-content>
-            <span ng-repeat="star in [1,2,3,4,5]">&#9733;</span>
+            <span ng-repeat="star in [1,2,3,4,5]" ng-class="{ 'filled': $index < (+movie.imdbRating)/2}" class="star-ratings">&#9733;</span>
             <p>Year: <span>{{movie.Year}}</span></p>
             <p>Genre: <span ng-repeat="genre in movie.Genre track by $index">{{genre}}</span></p>
             <p>Director: <span>{{movie.Director}}</span></p>

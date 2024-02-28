@@ -32,8 +32,9 @@
     <div class="container" layout="row" flex>
         <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" class="md-whiteframe-4dp" flex="25" md-component-id='left'>
             <md-list ng-click="c.toggleList()">
-                <md-list-item ng-repeat="genre in c.navItems" ng-click="c.genreClicked(genre)">
+                <md-list-item ng-repeat="genre in c.navItems" ng-click="c.genreClicked(genre)" ng-class="{'active': c.isSelected(genre)}">
                     <p flex="" class="sidenav-button">{{genre | uppercase}}</p>
+                    <p>{{isSelected(genre)}}</p>
                 </md-list-item>
             </md-list>
         </md-sidenav>

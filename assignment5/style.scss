@@ -2,15 +2,20 @@ md-toolbar {
     text-align: center;
 }
 
-// .filled {
-//     color: orange;
-// }
+.active {
+    color: blue;
+}
 
-// .star-ratings {
-//     font-size: 24px;
-//     cursor: pointer;
-//     color: #ccc;
-// }
+.star-ratings {
+    font-size: 24px;
+    cursor: pointer;
+    color: #ccc;
+
+
+    &.filled {
+        color: orange;
+    }
+}
 
 md-list-item:hover {
     background: #c3c1c1;
@@ -29,11 +34,11 @@ md-list-item:hover {
     .dialog-image {
         width: 250px;
         height: 300px;
+        margin: 0 auto 0 auto;
     }
 
     width: 400px;
     height: 600px;
-
 }
 
 // md-card-content {

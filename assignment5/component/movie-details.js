@@ -123,5 +123,10 @@ function displayMovieDetails($mdDialog, genreService, $scope, movieTitle, $http)
             $mdDialog.hide();
         };
 
+        $scope.updateRating = function (index) {
+            $scope.displayMovieCard.imdbRating = (index+1) * 2;
+            console.log($scope.displayMovieCard.imdbRating)
+        }
+
     }
 }

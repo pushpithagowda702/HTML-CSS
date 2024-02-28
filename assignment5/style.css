@@ -2,6 +2,19 @@ md-toolbar {
   text-align: center;
 }
 
+.active {
+  color: blue;
+}
+
+.star-ratings {
+  font-size: 24px;
+  cursor: pointer;
+  color: #ccc;
+}
+.star-ratings.filled {
+  color: orange;
+}
+
 md-list-item:hover {
   background: #c3c1c1;
   transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -22,6 +35,7 @@ md-list-item:hover {
 .custom-dialog .dialog-image {
   width: 250px;
   height: 300px;
+  margin: 0 auto 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

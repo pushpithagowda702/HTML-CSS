@@ -12,6 +12,7 @@ app.controller("Controller", function ($mdSidenav, genreService, movieTitle, $sc
     self.genreClicked = genreClicked;
     self.searchByName = '';
     self.searchByMovieName = searchByMovieName;
+    self.isSelected = isSelected;
     // genreService.setGenre("All");
 
    // Search a movie by name
@@ -28,6 +29,10 @@ app.controller("Controller", function ($mdSidenav, genreService, movieTitle, $sc
     function genreClicked(genre) {
         self.selectedGenre = genre;
         genreService.setGenre(genre);
+    }
+
+    function isSelected(genre) {
+        return genre === self.selectedGenre;
     }
 
 });

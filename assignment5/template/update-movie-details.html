@@ -7,8 +7,8 @@
         <md-dialog-content layout="column" layout-margin>
             <img class="dialog-image" ng-src="{{displayMovieCard.Poster}}">
             <div class="row">
-            <span ng-repeat="star in [1,2,3,4,5]">&#9733;</span>
-        </div>
+                <span ng-repeat="star in [1,2,3,4,5]" ng-class="{ 'filled': $index < (+displayMovieCard.imdbRating)/2}" class="star-ratings" ng-click="updateRating($index)">&#9733;</span>
+            </div>
             <md-input-container flex="30">
                 <label>Year</label>
                 <input ng-model="displayMovieCard.Year" required>
