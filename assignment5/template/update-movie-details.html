@@ -2,7 +2,7 @@
     <form name="movieCard">
         <md-toolbar layout="row" flex="" class="popup">
             <h3 flex="90">{{ displayMovieCard.Title }}</h3>
-            <md-button ng-click="closeDialog()">&#10006;</md-button>
+            <md-button ng-click="closeDialog()" ng-disabled="movieCard.$invalid">&#10006;</md-button>
         </md-toolbar>
         <md-dialog-content layout="column" layout-margin>
             <img class="dialog-image" ng-src="{{displayMovieCard.Poster}}">
