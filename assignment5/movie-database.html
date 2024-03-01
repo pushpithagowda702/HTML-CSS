@@ -1,0 +1,27 @@
+<div layout="column" ng-controller="Controller as c" flex="">
+    <header-template></header-template>
+    <div class="container" layout="row" flex>
+        <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" class="md-whiteframe-4dp" flex="25" md-component-id='left'>
+            <md-list ng-click="c.toggleList()">
+                <md-list-item ng-repeat="genre in c.navItems" ng-click="c.genreClicked(genre)" ng-class="{'active': c.isSelected(genre)}">
+                    <p flex="" class="sidenav-button">{{genre | uppercase}}</p>
+                    <p>{{navItems}}</p>
+                </md-list-item>
+            </md-list>
+        </md-sidenav>
+        <md-content id="content" flex layout-margin>
+            <div layout="row">
+                <md-input-container flex="90">
+                    <label>Movie Name</label>
+                    <input ng-model="c.searchByName" ng-enter="c.searchByMovieName(c.searchByName)">
+                </md-input-container>
+                <span class="material-symbols-outlined margin">
+                    search
+                </span>
+            </div>
+
+            <h2>Genre Selected - {{c.selectedGenre}}</h2>
+            <movie-details></movie-details>
+        </md-content>
+    </div>
+</div>

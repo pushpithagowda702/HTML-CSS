@@ -1,0 +1,19 @@
+<div layout="row" layout-align="center center" ng-controller="LoginController as controller" flex="">
+    <md-content class="container-sign-in md-whiteframe-4dp" flex="" flex-gt-xs="40" flex-lg="20" layout="column" layout-align="center center">
+        <form id="signip-form" name="signinform">
+            <h2>Sign Up</h2>
+            <md-input-container class="input-group" flex="">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" ng-model="email" required>
+            </md-input-container>
+            <md-input-container class="input-group" flex="">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" ng-model="password" required>
+            </md-input-container>
+            <md-dialog></md-dialog>
+            <md-button type="submit" class="sign-in" ng-click="controller.login(email, password)" ng-disabled="signinform.$invalid">Sign In</md-button>
+            <p class="or">or</p>
+            <md-button type="submit" class="sign-in"><a ui-sref="signup">Sign Up</a></md-button>
+        </form>
+    </md-content>
+</div>

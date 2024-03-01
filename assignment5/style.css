@@ -38,4 +38,24 @@ md-list-item:hover {
   margin: 0 auto 0 auto;
 }
 
+.container-sign-in {
+  padding: 20px;
+  margin: 5px;
+}
+.container-sign-in h2 {
+  text-align: center;
+}
+.container-sign-in .sign-in {
+  border-radius: 5px;
+  background-color: #c3c1c1;
+  width: 100%;
+}
+.container-sign-in .or {
+  text-align: center;
+  margin: 10px;
+}
+.container-sign-in .input-group {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */

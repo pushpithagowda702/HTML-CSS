@@ -1,0 +1,38 @@
+<div layout="row" ng-controller="LoginController as controller" flex="" layout-align="center center">
+    <md-content class="container-sign-in md-whiteframe-4dp" flex="" flex-gt-xs="60" flex-lg="20" layout="column">
+        <form id="signup-form" name="signupform">
+            <h2>Sign Up</h2>
+            <md-input-container class="input-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" ng-model="firstname" required>
+            </md-input-container>
+            <md-input-container class="input-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" ng-model="lastname" required>
+            </md-input-container>
+            <md-input-container class="input-group" flex="">
+                <label for="gender">Gender</label>
+                <input type="text" id="gender" name="gender" ng-model="gender" required>
+            </md-input-container>
+            <md-input-container class="input-group" flex="">
+                <label for="phone-number">Phone Number</label>
+                <input type="text" id="phone-number" name="phone-number" ng-model="phone" required>
+            </md-input-container>
+            <md-input-container class="input-group" flex="">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" ng-model="email" required>
+            </md-input-container>
+            <md-input-container class="input-group" flex="">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" ng-model="password" required>
+            </md-input-container>
+            <md-input-container class="input-group" flex="">
+                <label for="password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="password" ng-model="confirmPassword" required>
+            </md-input-container>
+            <md-dialog>
+            </md-dialog>
+            <md-button type="submit" class="sign-in" ng-disabled="signupform.$invalid" ng-click="controller.signUp(firstname, lastname, gender, phone, email, password, confirmPassword)">Sign Up</md-button>
+        </form>
+    </md-content>
+</div>

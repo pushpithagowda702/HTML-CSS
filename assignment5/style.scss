@@ -41,8 +41,26 @@ md-list-item:hover {
     height: 600px;
 }
 
-// md-card-content {
-//     p {
-//         line-height: 2px;
-//     }
-// }
+.container-sign-in {
+    padding: 20px;
+    margin: 5px;
+
+    h2 {
+        text-align: center;
+    }
+
+    .sign-in {
+        border-radius: 5px;
+        background-color: #c3c1c1;
+        width: 100%;
+    }
+
+    .or {
+        text-align: center;
+        margin: 10px;
+    }
+
+    .input-group {
+        width: 100%;
+    }
+}

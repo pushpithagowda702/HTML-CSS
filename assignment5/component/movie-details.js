@@ -12,19 +12,10 @@ function displayMovieDetails($mdDialog, genreService, $scope, movieTitle, $http)
 
     vm.allMovies = getAllMovies();
     vm.selectedMovie = null;
-    vm.hasMovies = hasMovies;
     vm.displayGenre = displayGenre;
     vm.genreSelected = genreService.getGenre();
     vm.displayMovie = [];
     vm.searchByMovieName = movieTitle.getMovieTitle();
-
-    $scope.$watch(function() {
-        return localStorage.length
-    }, function(newLength, oldLength) {
-        if(newLength !== oldLength) {
-            vm.allMovies = getAllMovies();
-        }
-    })
 
     function getAllMovies() {
         var allMoviesArray = [];
@@ -34,10 +25,6 @@ function displayMovieDetails($mdDialog, genreService, $scope, movieTitle, $http)
             allMoviesArray.push(value);
         }
         return allMoviesArray;
-    }
-
-    function hasMovies() {
-        return (vm.displayMovie.length === 0)
     }
 
     $scope.$watch(function () {
@@ -69,7 +56,7 @@ function displayMovieDetails($mdDialog, genreService, $scope, movieTitle, $http)
     }, function (newGenre, oldGenre) {
         vm.displayMovie = [];
         if (newGenre === "All") {
-            vm.displayMovie = vm.allMovies;
+            vm.displayMovie = getAllMovies();
         } else if (newGenre !== oldGenre) {
             vm.genreSelected = newGenre;
             vm.displayGenre();
@@ -77,14 +64,12 @@ function displayMovieDetails($mdDialog, genreService, $scope, movieTitle, $http)
     })
 
     function displayGenre() {
+        vm.allMovies = getAllMovies();
         vm.allMovies.forEach(function (movie) {
-            var genreArray = movie.Genre.split(",");
-            for (let i = 0; i < genreArray.length; i++) {
-                if (genreArray[i].trim() === vm.genreSelected) {
+            var genreArray = movie.Genre.split(", ");
+                if (genreArray.includes(vm.genreSelected)) {
                     vm.displayMovie.push(movie);
-                    break;
                 }
-            }
         });
     }
 
@@ -112,10 +97,10 @@ function displayMovieDetails($mdDialog, genreService, $scope, movieTitle, $http)
         };
 
         $scope.clearDialog = function () {
-            $scope.displayMovieCard.Year = null;
-            $scope.displayMovieCard.Actors = null;
-            $scope.displayMovieCard.Genre = null;
-            $scope.displayMovieCard.Director = null;
+            $scope.displayMovieCard.Year = displayMovie.Year;
+            $scope.displayMovieCard.Actors = displayMovie.Actors;
+            $scope.displayMovieCard.Genre = displayMovie.Genre;
+            $scope.displayMovieCard.Director = displayMovie.Director;
         };
 
         $scope.closeDialog = function () {
