@@ -12,14 +12,13 @@ function displayMovieDetails($mdDialog, genreService, $scope, movieTitle, $http)
 
     vm.allMovies = getAllMovies();
     vm.selectedMovie = null;
-    vm.displayGenre = displayGenre;
     vm.genreSelected = genreService.getGenre();
     vm.displayMovie = [];
     vm.searchByMovieName = movieTitle.getMovieTitle();
 
     function getAllMovies() {
         var allMoviesArray = [];
-        for(let i=0; i<localStorage.length; i++) {
+        for (let i = 0; i < localStorage.length; i++) {
             var key = localStorage.key(i);
             var value = JSON.parse(localStorage.getItem(key));
             allMoviesArray.push(value);
@@ -27,51 +26,41 @@ function displayMovieDetails($mdDialog, genreService, $scope, movieTitle, $http)
         return allMoviesArray;
     }
 
-    $scope.$watch(function () {
-        return movieTitle.getMovieTitle();
-    }, function (newMovie, oldMovie) {
-        if (newMovie !== oldMovie) {
-            vm.displayMovie = [];
-            vm.searchByMovieName = newMovie;
-            var movieList = localStorage.getItem(vm.searchByMovieName.toLowerCase());
-            console.log(vm.searchByMovieName);
-            if (movieList === null) {
-                return $http.get("http://www.omdbapi.com/?t=" + vm.searchByMovieName + "&apikey=ee1c62d1")
-                    .then(function (response) {
-                        if(response.data.Response === 'False') {
-                            return;
-                        }
-                        localStorage.setItem(vm.searchByMovieName.toLowerCase(), JSON.stringify(response.data));
-                        vm.displayMovie.push(response.data);
-                    });
-            } else {
-                vm.displayMovie.push(JSON.parse(movieList));
-                console.log(vm.displayMovie);
-            }
+    $scope.$on("searchMovie", function () {
+        vm.displayMovie = [];
+        vm.searchByMovieName = movieTitle.getMovieTitle();;
+        var movieList = localStorage.getItem(vm.searchByMovieName.toLowerCase());
+        console.log(vm.searchByMovieName);
+        if (movieList === null) {
+            return $http.get("http://www.omdbapi.com/?t=" + vm.searchByMovieName + "&apikey=ee1c62d1")
+                .then(function (response) {
+                    if (response.data.Response === 'False') {
+                        return;
+                    }
+                    localStorage.setItem(vm.searchByMovieName.toLowerCase(), JSON.stringify(response.data));
+                    vm.displayMovie.push(response.data);
+                });
+        } else {
+            vm.displayMovie.push(JSON.parse(movieList));
+            console.log(vm.displayMovie);
         }
     });
 
-    $scope.$watch(function () {
-        return genreService.getGenre();
-    }, function (newGenre, oldGenre) {
+    $scope.$on("genreChanged", function () {
         vm.displayMovie = [];
-        if (newGenre === "All") {
-            vm.displayMovie = getAllMovies();
-        } else if (newGenre !== oldGenre) {
-            vm.genreSelected = newGenre;
-            vm.displayGenre();
-        }
-    })
-
-    function displayGenre() {
         vm.allMovies = getAllMovies();
-        vm.allMovies.forEach(function (movie) {
-            var genreArray = movie.Genre.split(", ");
+        vm.genreSelected = genreService.getGenre();
+        if (vm.genreSelected === "All") {
+            vm.displayMovie = getAllMovies();
+        } else {
+            vm.allMovies.forEach(function (movie) {
+                var genreArray = movie.Genre.split(", ");
                 if (genreArray.includes(vm.genreSelected)) {
                     vm.displayMovie.push(movie);
                 }
-        });
-    }
+            });
+        }
+    });
 
     vm.updateInfo = function (ev, movie) {
         vm.selectedMovie = movie;
@@ -89,18 +78,16 @@ function displayMovieDetails($mdDialog, genreService, $scope, movieTitle, $http)
     }
 
     function DialogController($scope, $mdDialog, displayMovie) {
-        $scope.displayMovieCard = displayMovie;
+        $scope.displayMovieCard = angular.copy(displayMovie);
 
         $scope.updateMovie = function (answer) {
             localStorage.setItem(displayMovie.Title.toLowerCase(), JSON.stringify(answer));
             $mdDialog.hide(answer);
         };
 
-        $scope.clearDialog = function () {
-            $scope.displayMovieCard.Year = displayMovie.Year;
-            $scope.displayMovieCard.Actors = displayMovie.Actors;
-            $scope.displayMovieCard.Genre = displayMovie.Genre;
-            $scope.displayMovieCard.Director = displayMovie.Director;
+        $scope.reset = function () {
+            $scope.displayMovieCard = displayMovie;
+            $scope.movieCard.$setPristine();
         };
 
         $scope.closeDialog = function () {
@@ -108,7 +95,7 @@ function displayMovieDetails($mdDialog, genreService, $scope, movieTitle, $http)
         };
 
         $scope.updateRating = function (index) {
-            $scope.displayMovieCard.imdbRating = (index+1) * 2;
+            $scope.displayMovieCard.imdbRating = (index + 1) * 2;
             console.log($scope.displayMovieCard.imdbRating)
         }
 

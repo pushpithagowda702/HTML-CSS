@@ -17,11 +17,6 @@ md-toolbar {
     }
 }
 
-md-list-item:hover {
-    background: #c3c1c1;
-    transition: box-shadow .4s cubic-bezier(.25, .8, .25, 1), background-color .4s cubic-bezier(.25, .8, .25, 1);
-}
-
 .toggle-button {
     font-size: 34px;
 }

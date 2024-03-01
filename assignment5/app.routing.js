@@ -10,12 +10,6 @@ app.config(function ($locationProvider) {
 });
 
 app.config(function ($stateProvider) {
-    var landing = {
-        name: 'landingPage',
-        url: '/',
-        templateUrl: 'sign-in.html' 
-    }
-
     var loginSuccessful = {
         name: 'movieDb',
         url: '/home',
@@ -34,7 +28,6 @@ app.config(function ($stateProvider) {
         templateUrl: 'sign-in.html'
     }
 
-    $stateProvider.state(landing);
     $stateProvider.state(loginSuccessful);
     $stateProvider.state(signUp);
     $stateProvider.state(signIn);
