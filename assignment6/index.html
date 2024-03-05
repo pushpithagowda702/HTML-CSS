@@ -26,7 +26,7 @@
         <md-button class="md-whiteframe-4dp" ng-click="controller.displayChatBox()">Add Chat Box</md-button>
     </div>
     <div layout="row" layout-wrap layout-align="center center">
-        <chat-box flex="100" flex-gt-xs="50" flex-gt-sm="40" flex-gt-md="30" class="card" ng-repeat="count in controller.chatBoxObj.addChatBox track by $index" count="count" messages="controller.messages" chat-box-obj="controller.chatBoxObj"></chat-box>
+        <chat-box flex="100" flex-gt-xs="50" flex-gt-sm="40" flex-gt-md="30" class="card" ng-repeat="count in controller.chatBoxObj.addChatBox track by $index" count="count" chat-box-obj="controller.chatBoxObj"></chat-box>
     </div>
 </body>
 

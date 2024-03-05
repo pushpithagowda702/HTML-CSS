@@ -19,7 +19,7 @@ app.controller("chatBox", function ($mdDialog) {
         if (vm.chatBoxObj.counter.length > 0) {
             let value = vm.chatBoxObj.counter[0];
             vm.chatBoxObj.addChatBox.push(value);
-            vm.chatBoxObj.messages[value-1].messageArray = [];
+            vm.chatBoxObj.messages[value - 1].messageArray = [];
             vm.chatBoxObj.counter.splice(0, 1);
             console.log(vm.chatBoxObj.addChatBox)
         } else if (vm.chatBoxObj.addChatBox.length < 10) {

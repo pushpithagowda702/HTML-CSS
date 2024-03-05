@@ -30,16 +30,11 @@ function sendMessage() {
                 sender: vm.count,
                 text: vm.message
             }
-
-            vm.chatBoxObj.messages.forEach(function(chat) {
+            vm.chatBoxObj.messages.forEach(function (chat) {
                 console.log(chat.messageArray)
                 chat.messageArray.push(msg);
                 console.log(chat)
             })
-            console.log(vm.chatBoxObj.messages.messageArray)
-            // vm.messages.push(msg)
-            // vm.chatBoxObj.messages.push(msg)
-            console.log(vm.count + " " + vm.message)
             vm.message = "";
         }
     }
@@ -56,7 +51,7 @@ function sendMessage() {
         vm.typing = value;
         vm.chatBoxTyping = chatBox;
 
-        if(vm.count === vm.chatBoxTyping && value) {
+        if (vm.count === vm.chatBoxTyping && value) {
             vm.chatBoxObj.typing = "Chat Box " + chatBox + " is typing";
         } else {
             vm.chatBoxObj.typing = "";
