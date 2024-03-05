@@ -31,8 +31,8 @@ function sendMessage() {
                 text: vm.message
             }
             vm.chatBoxObj.messages.forEach(function (chat) {
-                console.log(chat.messageArray)
-                chat.messageArray.push(msg);
+                console.log(chat)
+                chat.push(msg);
                 console.log(chat)
             })
             vm.message = "";
@@ -52,7 +52,7 @@ function sendMessage() {
         vm.chatBoxTyping = chatBox;
 
         if (vm.count === vm.chatBoxTyping && value) {
-            vm.chatBoxObj.typing = "Chat Box " + chatBox + " is typing";
+            vm.chatBoxObj.typing = "Chat Box " + chatBox + " is typing...";
         } else {
             vm.chatBoxObj.typing = "";
         }

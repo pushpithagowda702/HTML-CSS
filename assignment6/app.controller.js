@@ -11,21 +11,19 @@ app.controller("chatBox", function ($mdDialog) {
         counter: [],
         typing: ''
     }
-
     vm.displayChatBox = displayChatBox;
 
     function displayChatBox() {
-
         if (vm.chatBoxObj.counter.length > 0) {
             let value = vm.chatBoxObj.counter[0];
             vm.chatBoxObj.addChatBox.push(value);
-            vm.chatBoxObj.messages[value - 1].messageArray = [];
+            vm.chatBoxObj.messages[value - 1] = [];
             vm.chatBoxObj.counter.splice(0, 1);
             console.log(vm.chatBoxObj.addChatBox)
         } else if (vm.chatBoxObj.addChatBox.length < 10) {
-            let index = vm.chatBoxObj.addChatBox.length;
-            vm.chatBoxObj.addChatBox.push(index + 1);
-            vm.chatBoxObj.messages.push({ messageArray: [] });
+            let value = vm.chatBoxObj.addChatBox.length;
+            vm.chatBoxObj.addChatBox.push(value + 1);
+            vm.chatBoxObj.messages.push([]);
             console.log(vm.chatBoxObj)
         } else {
             $mdDialog.show(

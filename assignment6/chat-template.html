@@ -5,7 +5,7 @@
     </md-toolbar>
     <label ng-hide="$ctrl.typing">{{$ctrl.chatBoxObj.typing}}</label>
     <md-content>
-        <div class="message" ng-repeat="msg in $ctrl.chatBoxObj.messages[$ctrl.count - 1].messageArray">
+        <div class="message" ng-repeat="msg in $ctrl.chatBoxObj.messages[$ctrl.count - 1]">
             <div class="sender" ng-if="msg.sender === $ctrl.count">
                 <p>Chat Box {{msg.sender}}</p>
                 <p>{{msg.text}}</p>
