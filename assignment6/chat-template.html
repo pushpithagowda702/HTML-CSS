@@ -7,11 +7,11 @@
     <md-content>
         <div class="message" ng-repeat="msg in $ctrl.chatBoxObj.messages[$ctrl.count - 1]">
             <div class="sender" ng-if="msg.sender === $ctrl.count">
-                <p>Chat Box {{msg.sender}}</p>
+                <label>Chat Box {{msg.sender}}</label>
                 <p>{{msg.text}}</p>
             </div>
             <div class="receiver" ng-if="msg.sender !== $ctrl.count">
-                <p>Chat Box {{msg.sender}}</p>
+                <label>Chat Box {{msg.sender}}</label>
                 <p>{{msg.text}}</p>
             </div>
         </div>

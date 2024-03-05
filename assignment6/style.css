@@ -36,6 +36,12 @@ md-toolbar h1 {
 .card md-content .receiver {
   padding: 10px;
 }
+.card md-content label {
+  font-weight: bold;
+}
+.card md-content p {
+  margin: 0;
+}
 .card .enter-message {
   background-color: rgb(63, 81, 181);
   margin: 0;

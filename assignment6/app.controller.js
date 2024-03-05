@@ -29,8 +29,8 @@ app.controller("chatBox", function ($mdDialog) {
             $mdDialog.show(
                 $mdDialog.alert()
                     .clickOutsideToClose(true)
-                    .title('10 Chats Only')
-                    .textContent('Chat limits exceeded')
+                    .title('Alert')
+                    .textContent('Chat limit exceeded')
                     .ariaLabel('Alert Dialog')
                     .ok('Ok')
             );

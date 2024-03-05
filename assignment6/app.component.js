@@ -24,7 +24,6 @@ function sendMessage() {
     vm.chatBoxTyping;
 
     function sendMsg() {
-        console.log(vm.chatBoxObj);
         if (vm.message.trim !== "") {
             var msg = {
                 sender: vm.count,
