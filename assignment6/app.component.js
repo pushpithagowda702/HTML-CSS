@@ -30,8 +30,15 @@ function sendMessage() {
                 sender: vm.count,
                 text: vm.message
             }
-            vm.messages.push(msg)
-            vm.chatBoxObj.messages.push(msg)
+
+            vm.chatBoxObj.messages.forEach(function(chat) {
+                console.log(chat.messageArray)
+                chat.messageArray.push(msg);
+                console.log(chat)
+            })
+            console.log(vm.chatBoxObj.messages.messageArray)
+            // vm.messages.push(msg)
+            // vm.chatBoxObj.messages.push(msg)
             console.log(vm.count + " " + vm.message)
             vm.message = "";
         }
@@ -54,6 +61,5 @@ function sendMessage() {
         } else {
             vm.chatBoxObj.typing = "";
         }
-        
     }
 }
