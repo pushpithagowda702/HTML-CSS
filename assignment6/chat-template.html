@@ -1,0 +1,24 @@
+<div>
+    <md-toolbar layout>
+        <h3 flex="90">Chat Box {{$ctrl.count}}</h3>
+        <md-button ng-click="$ctrl.closeChatBox($ctrl.count)">&#10006;</md-button>
+    </md-toolbar>
+    <label ng-hide="$ctrl.typing">{{$ctrl.chatBoxObj.typing}}</label>
+    <md-content>
+        <div class="message" ng-repeat="msg in $ctrl.chatBoxObj.messages">
+            <div class="sender" ng-if="msg.sender === $ctrl.count">
+                <p>Chat Box {{msg.sender}}</p>
+                <p>{{msg.text}}</p>
+            </div>
+            <div class="receiver" ng-if="msg.sender !== $ctrl.count">
+                <p>Chat Box {{msg.sender}}</p>
+                <p>{{msg.text}}</p>
+            </div>
+        </div>
+    </md-content>
+    <md-input-container class="enter-message" layout flex="">
+        <label ng-hide="$ctrl.typing">Enter your message</label>
+        <label ng-hide="!$ctrl.typing">Typing....</label>
+        <input type="text" ng-focus="$ctrl.onFocusEvent(true, $ctrl.count)" ng-blur="$ctrl.onFocusEvent(false, $ctrl.count)" ng-model="$ctrl.message" ng-keypress="$event.keyCode === 13 && $ctrl.sendMsg()" class="enter-message">
+      </md-input-container>
+</div>
